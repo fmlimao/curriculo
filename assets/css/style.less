@@ -14,8 +14,10 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-
     font-family: 'Varela', sans-serif;
+
+    // http://www.patternify.com/
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQYV2NkQALv3r37zwjjgzhCQkKMYAEYB8RmROaABAAS4A/Olzn5YAAAAABJRU5ErkJggg==');
 }
 
 article,
@@ -100,13 +102,16 @@ h6 {
     }
 
     .cv-header-avatar {
-
         // [SM]
-        @media screen and (min-width: 768px) {
-            text-align: right;
-        }
+        text-align: right;
 
         img {
+
+            // [XS]
+            @media screen and (max-width: 767px) {
+                width: 100px;
+                height: 100px;
+            }
 
             // [SM]
             @media screen and (min-width: 768px) {
@@ -137,6 +142,7 @@ h6 {
     .cv-header-address {
         // [XS]
         padding-top: 20px;
+        text-align: center;
 
         // [SM]
         @media screen and (min-width: 768px) {
