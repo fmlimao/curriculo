@@ -11,8 +11,8 @@
     <meta name="copyright" content="© 2019 Leandro Macedo">
     <meta name="robots" content="all">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="assets/css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -21,7 +21,7 @@
 
 <body>
 
-    <main class="cv-main">
+    <main class="cv-main" itemscope itemtype="http://schema.org/Person">
 
         <header class="cv-header">
             <div class="container">
@@ -37,15 +37,15 @@
 
                     <div class="col-xs-7 col-sm-5">
                         <div class="cv-header-titles">
-                            <h1 class="cv-header-title">Leandro<br><span class="color-a">Macedo</span></h1>
-                            <h2 class="cv-header-subtitle">Desenvolvedor</h2>
+                            <h1 class="cv-header-title" itemprop="name">Leandro<br><span class="color-a">Macedo</span></h1>
+                            <h2 class="cv-header-subtitle" itemprop="jobTitle">Desenvolvedor</h2>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-sm-4">
                         <address class="cv-header-address">
-                            <p>Telefone: <strong class="color-a">+55 11 98739-1075</strong></p>
-                            <p>E-mail: <strong class="color-a">fmlimao@gmail.com</strong></p>
+                            <p>Telefone: <strong class="color-a" itemprop="telephone">+55 11 98739-1075</strong></p>
+                            <p>E-mail: <strong class="color-a" itemprop="email">fmlimao@gmail.com</strong></p>
                         </address>
                     </div>
 
@@ -81,7 +81,7 @@
                             <div class="col-xs-12 col-sm-3"></div>
 
                             <div class="col-xs-12 col-sm-9">
-                                <div class="article-body">
+                                <div class="article-body" itemprop="knowsAbout">
                                     <p>Trabalho como programador PHP há 18 anos, desenvolvendo sites e sistemas web. Já
                                         trabalhei como líder técnico em equipes de desenvolvimento. Atualmente atuo como
                                         programador PHP em tempo integral.</p>
