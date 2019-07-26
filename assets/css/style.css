@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Varela&display=swap');
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Varela', sans-serif;
+*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Varela', sans-serif;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.color-a {
+  color: #2269bb;
+}
+.cv-main {
+  box-shadow: inset 0 20px 0 0 #2269bb, inset 0 24px 0 0 #1c5698, inset 0 -20px 0 0 #2269bb, inset 0 -24px 0 0 #1c5698;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .cv-main {
+    box-shadow: inset 0 40px 0 0 #2269bb, inset 0 44px 0 0 #1c5698, inset 0 -40px 0 0 #2269bb, inset 0 -44px 0 0 #1c5698;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cv-main {
+    box-shadow: inset 0 80px 0 0 #2269bb, inset 0 84px 0 0 #1c5698, inset 0 -80px 0 0 #2269bb, inset 0 -84px 0 0 #1c5698;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}
+.cv-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .cv-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cv-header .cv-header-avatar {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cv-header .cv-header-avatar img {
+    width: 154px;
+    height: 154px;
+  }
+}
+.cv-header .cv-header-titles {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .cv-header .cv-header-titles .cv-header-title {
+    font-size: 60px;
+  }
+}
+.cv-header .cv-header-titles .cv-header-subtitle {
+  font-size: 20px;
+}
+.cv-header .cv-header-address {
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .cv-header .cv-header-address {
+    padding-top: 50px;
+    height: 154px;
+    text-align: right;
+  }
+}
+.cv-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cv-section .cv-section-header {
+  margin-bottom: 8px;
+}
+.cv-section .cv-section-header .cv-section-header-title {
+  height: 26px;
+  line-height: 26px;
+  font-size: 24px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .cv-section .cv-section-header .cv-section-header-title {
+    text-align: right;
+  }
+}
+.cv-section .cv-section-header .cv-section-header-border {
+  background-color: #2269bb;
+  margin-top: 11px;
+  height: 4px;
+}
+.cv-section .cv-section-body .cv-article {
+  margin-bottom: 16px;
+}
+.cv-section .cv-section-body .cv-article .article-title {
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2269bb;
+}
+@media screen and (max-width: 767px) {
+  .cv-section .cv-section-body .cv-article .article-title {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cv-section .cv-section-body .cv-article .article-title {
+    text-align: right;
+  }
+}
+.cv-section .cv-section-body .cv-article .article-subtitle {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
