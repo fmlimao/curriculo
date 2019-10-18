@@ -1,0 +1,49 @@
+
+.cv-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    .cv-header {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  .cv-header .cv-header-avatar {
+    text-align: right;
+  }
+  @media screen and (max-width: 767px) {
+    .cv-header .cv-header-avatar img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .cv-header .cv-header-avatar img {
+      width: 154px;
+      height: 154px;
+    }
+  }
+  .cv-header .cv-header-titles {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 768px) {
+    .cv-header .cv-header-titles .cv-header-title {
+      font-size: 60px;
+    }
+  }
+  .cv-header .cv-header-titles .cv-header-subtitle {
+    font-size: 20px;
+  }
+  .cv-header .cv-header-address {
+    padding-top: 20px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    .cv-header .cv-header-address {
+      padding-top: 50px;
+      height: 154px;
+      text-align: right;
+    }
+  }
