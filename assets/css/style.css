@@ -159,3 +159,10 @@ h6 {
   font-size: 16px;
   font-weight: bold;
 }
+.cv-section .cv-section-body .cv-article .article-subtitle small {
+  display: block;
+  margin-top: 2px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #2269bb;
+}
