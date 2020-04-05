@@ -24,6 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -42,8 +43,7 @@
                         <div class="px-2 w-5/12 clearfix md:w-3/12">
                             <div
                                 class="rounded-full overflow-hidden border border-solid border-gray-400 bg-white float-left p-1 md:float-right md:w-32">
-                                <img src="assets/img/leandro-macedo.jpg" alt="Leandro Macedo"
-                                    class="rounded-full">
+                                <img src="assets/img/leandro-macedo.jpg" alt="Leandro Macedo" class="rounded-full">
                             </div>
                         </div>
 
@@ -58,15 +58,32 @@
                         </div>
 
                         <div class="px-2 w-full md:w-5/12">
-                            <address class="text-center not-italic md:text-right md:text-lg md:pt-6">
-                                <p class="mt-2">
-                                    Telefone:
-                                    <strong class="text-blue-700" itemprop="telephone">+55 11 98739-1075</strong>
+                            <address class="text-center not-italic md:text-right md:text-md md:pt-6">
+                                <p class="mt-2 md:-mt-2">
+                                    <strong class="text-blue-700" itemprop="telephone">
+                                        <a href="https://api.whatsapp.com/send?phone=5511987391075" target="_blank">
+                                            +55 11 98739-1075
+                                        </a>
+                                    </strong>
+                                    <span class="fa fa-whatsapp text-blue-700 ml-2"></span>
                                 </p>
 
                                 <p class="mt-2">
-                                    E-mail:
-                                    <strong class="text-blue-700" itemprop="email">fmlimao@gmail.com</strong>
+                                    <strong class="text-blue-700" itemprop="email">
+                                        <a href="mailto:fmlimao@gmail.com">
+                                            fmlimao@gmail.com
+                                        </a>
+                                    </strong>
+                                    <span class="fa fa-envelope-o text-blue-700 ml-2"></span>
+                                </p>
+
+                                <p class="mt-2">
+                                    <strong class="text-blue-700" itemprop="follows">
+                                        <a href="https://github.com/fmlimao" target="_blank">
+                                            https://github.com/fmlimao
+                                        </a>
+                                    </strong>
+                                    <span class="fa fa-github text-blue-700 ml-2"></span>
                                 </p>
                             </address>
                         </div>
@@ -83,19 +100,21 @@
                     </div>
 
                     <div class="px-2 w-full md:w-9/12">
-                        <div class="h-1 mt-2 bg-blue-700 rounded-sm"></div>
+                        <div class="h-1 mt-2 bg-gray-400 rounded-sm"></div>
                     </div>
                 </header>
 
-                <div class="pt-4">
+                <div class="pt-8">
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12"></div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <div itemprop="knowsAbout">
-                                <p>Trabalho como programação há 18 anos, desenvolvendo sites, aplicativos para
+                                <p>
+                                    Trabalho como programação há 18 anos, desenvolvendo sites, aplicativos para
                                     celular e sistemas web. Experiência de 6 anos como líder técnico em equipes de
-                                    desenvolvimento. Atualmente trabalho com PHP, NodeJS e ReactJS.</p>
+                                    desenvolvimento. Atualmente trabalho com PHP, NodeJS e ReactJS.
+                                </p>
                             </div>
                         </div>
                     </article>
@@ -107,31 +126,37 @@
             <div class="container mx-auto px-4 sm:px-12 md:px-4">
                 <header class="flex flex-wrap -mx-2">
                     <div class="px-2 w-full md:w-3/12">
-                        <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">Experiências</h3>
+                        <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">
+                            Experiências
+                        </h3>
                     </div>
 
                     <div class="px-2 w-full md:w-9/12">
-                        <div class="h-1 mt-2 bg-blue-700 rounded-sm"></div>
+                        <div class="h-1 mt-2 bg-gray-400 rounded-sm"></div>
                     </div>
                 </header>
 
-                <div class="pt-4">
+                <div class="pt-8">
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12">
                             <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
-                                Analista Programador</h4>
+                                Analista Programador
+                            </h4>
                         </div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
                                 Movida Aluguel de Carros
-                                <small class="block text-xs text-blue-700">(2018 - Atual)</small>
                             </h3>
 
                             <div>
-                                <ul class="list-disc ml-8">
-                                    <li>Desenvolvimento de sistemas em geral utilizando PHP, Boostrap e MySQL</li>
-                                    <li>Desenvolvimento de APIs Restful utilizando PHP e MySQL</li>
+                                <ul class="text-sm">
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento de sistemas em geral utilizando PHP, Boostrap e MySQL.
+                                    </li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento de APIs Restful utilizando PHP e MySQL.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -140,25 +165,33 @@
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12">
                             <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
-                                Analista Programador</h4>
+                                Analista Programador
+                            </h4>
                         </div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
                                 Sodré Santoro Leiloeiro Oficial
-                                <small class="block text-xs text-blue-700">(2012 - 2018)</small>
                             </h3>
 
                             <div>
-                                <ul class="list-disc ml-8">
-                                    <li>Desenvolvimento do novo site de leilões utilizando PHP, Bootstrap, MySQL e
-                                        SqlServer
+                                <ul class="text-sm">
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento do novo site de leilões utilizando PHP, Bootstrap, MySQL e
+                                        SqlServer.
                                     </li>
-                                    <li>Desenvolvimento de sistemas em geral utilizando PHP, Boostrap e MySQL</li>
-                                    <li>Desenvolvimento de APIs Restful utilizando PHP e MySQL</li>
-                                    <li>Desenvolvimento de aplicativos mobile para uso interno utilizando PhoneGap.
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento de sistemas em geral utilizando PHP, Boostrap e MySQL.
                                     </li>
-                                    <li>Líder técnico de equipe de desenvolvimento web.</li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento de APIs Restful utilizando PHP e MySQL.
+                                    </li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento de aplicativos mobile para uso interno utilizando PhoneGap.
+                                    </li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Líder técnico de equipe de desenvolvimento web.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -167,21 +200,25 @@
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12">
                             <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
-                                Analista Programador</h4>
+                                Analista Programador
+                            </h4>
                         </div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
                                 Blue Service
-                                <small class="block text-xs text-blue-700">(2011 - 2012)</small>
                             </h3>
 
                             <div>
-                                <ul class="list-disc ml-8">
-                                    <li>Desenvolvimento e manutenção de sistemas em geral utilizando PHP, Java,
+                                <ul class="text-sm">
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento e manutenção de
+                                        sistemas em geral utilizando PHP, Java,
                                         ExtJs, MySQL e PostgreSql.
                                     </li>
-                                    <li>Líder técnico de equipe de desenvolvimento web.</li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Líder técnico de equipe de desenvolvimento web.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -190,18 +227,19 @@
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12">
                             <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
-                                Programador</h4>
+                                Programador
+                            </h4>
                         </div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
                                 Prodoctor RX - Marketing Farmacêutico
-                                <small class="block text-xs text-blue-700">(2010 - 2011)</small>
                             </h3>
 
                             <div>
-                                <ul class="list-disc ml-8">
-                                    <li>Desenvolvimento e manutenção de sistemas em geral utilizando PHP, jQuery e
+                                <ul class="text-sm">
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento e manutenção de sistemas em geral utilizando PHP, jQuery e
                                         MySQL.
                                     </li>
                                 </ul>
@@ -212,18 +250,19 @@
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12">
                             <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
-                                Programador</h4>
+                                Programador
+                            </h4>
                         </div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
                                 Nu Design
-                                <small class="block text-xs text-blue-700">(2008 - 2008)</small>
                             </h3>
 
                             <div>
-                                <ul class="list-disc ml-8">
-                                    <li>Desenvolvimento e manutenção de sistemas em geral utilizando PHP, jQuery e
+                                <ul class="text-sm">
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento e manutenção de sistemas em geral utilizando PHP, jQuery e
                                         MySQL.
                                     </li>
                                 </ul>
@@ -234,22 +273,24 @@
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12">
                             <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
-                                Estagiário de
-                                Desenvolvimento</h4>
+                                Estagiário de Desenvolvimento
+                            </h4>
                         </div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
                                 DIGIPIX Soluções em Fotografia Digital
-                                <small class="block text-xs text-blue-700">(2007 - 2008)</small>
                             </h3>
 
                             <div>
-                                <ul class="list-disc ml-8">
-                                    <li>Desenvolvimento e manutenção de sistemas em geral utilizando PHP, jQuery e
+                                <ul class="text-sm">
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento e manutenção de sistemas em geral utilizando PHP, jQuery e
                                         MySQL.
                                     </li>
-                                    <li>Redes e infra-estrutura.</li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Redes e infra-estrutura.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -258,23 +299,27 @@
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12">
                             <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
-                                Estagiário de
-                                Desenvolvimento</h4>
+                                Estagiário de Desenvolvimento
+                            </h4>
                         </div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
                                 Colégio Serrano Guardia
-                                <small class="block text-xs text-blue-700">(2005 - 2007)</small>
                             </h3>
 
                             <div>
-                                <ul class="list-disc ml-8">
-                                    <li>Desenvolvimento e manutenção de sistemas em geral utilizando PHP, jQuery e
+                                <ul class="text-sm">
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Desenvolvimento e manutenção de sistemas em geral utilizando PHP, jQuery e
                                         MySQL.
                                     </li>
-                                    <li>Redes e infra-estrutura.</li>
-                                    <li>Administração de Laboratório de Aula.</li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Redes e infra-estrutura.
+                                    </li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Administração de Laboratório de Aula.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -288,26 +333,38 @@
             <div class="container mx-auto px-4 sm:px-12 md:px-4">
                 <header class="flex flex-wrap -mx-2">
                     <div class="px-2 w-full md:w-3/12">
-                        <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">Habilidades</h3>
+                        <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">
+                            Habilidades
+                        </h3>
                     </div>
 
                     <div class="px-2 w-full md:w-9/12">
-                        <div class="h-1 mt-2 bg-blue-700 rounded-sm"></div>
+                        <div class="h-1 mt-2 bg-gray-400 rounded-sm"></div>
                     </div>
                 </header>
 
-                <div class="pt-4">
+                <div class="pt-8">
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12"></div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <div class="article-body">
                                 <ul>
-                                    <li>PHP, NodeJS</li>
-                                    <li>MySQL, PostgreSQL, MongoDB, Firebase</li>
-                                    <li>Bootstrap 4, Tailwind CSS</li>
-                                    <li>Javascript, TypeScript, React, VueJS</li>
-                                    <li>PhoneGap, React Native</li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        PHP, NodeJS
+                                    </li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        MySQL, PostgreSQL, MongoDB, Firebase
+                                    </li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Bootstrap 4, Tailwind CSS
+                                    </li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        Javascript, TypeScript, React, VueJS
+                                    </li>
+                                    <li class="mb-1 border-l-4 border-blue-200 pl-2">
+                                        PhoneGap, React Native
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -321,25 +378,27 @@
             <div class="container mx-auto px-4 sm:px-12 md:px-4">
                 <header class="flex flex-wrap -mx-2">
                     <div class="px-2 w-full md:w-3/12">
-                        <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">Formação</h3>
+                        <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">
+                            Formação
+                        </h3>
                     </div>
 
                     <div class="px-2 w-full md:w-9/12">
-                        <div class="h-1 mt-2 bg-blue-700 rounded-sm"></div>
+                        <div class="h-1 mt-2 bg-gray-400 rounded-sm"></div>
                     </div>
                 </header>
 
-                <div class="pt-4">
+                <div class="pt-8">
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12">
                             <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
-                                Ciências da Computação</h4>
+                                Ciências da Computação
+                            </h4>
                         </div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
                                 Centro Universitário Nove de Julho
-                                <small class="block text-xs text-blue-700">(2007 - 2010)</small>
                             </h3>
                         </div>
                     </article>
@@ -347,14 +406,13 @@
                     <article class="flex flex-wrap -mx-2 mb-8">
                         <div class="px-2 w-full md:w-3/12">
                             <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
-                                Ensino
-                                Médio e Técnico</h4>
+                                Ensino Médio e Técnico
+                            </h4>
                         </div>
 
                         <div class="px-2 w-full md:w-9/12">
                             <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
                                 Colégio Serrano Guardia
-                                <small class="block text-xs text-blue-700">(2004 - 2006)</small>
                             </h3>
                         </div>
                     </article>
