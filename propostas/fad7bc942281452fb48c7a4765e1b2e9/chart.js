@@ -20,21 +20,21 @@ var tasks = {
         duration: 2,
         complete: 0,
         dependence: null,
-        resource: 'services',
+        resource: 'Serviços',
     },
 
 
 
-    'Logo': {
-        id: 'Logo',
-        tag: 'Identidade Visual',
+    'SiteLogo': {
+        id: 'SiteLogo',
+        tag: 'Site: Identidade Visual',
         initial: null,
         final: null,
         rest: 0,
         duration: 7,
         complete: 0,
         dependence: 'Planning',
-        resource: 'logo',
+        resource: 'Site',
     },
 
 
@@ -47,8 +47,8 @@ var tasks = {
         rest: 0,
         duration: 4,
         complete: 0,
-        dependence: 'Logo',
-        resource: 'site',
+        dependence: 'SiteLogo',
+        resource: 'Site',
     },
     'SiteContact': {
         id: 'SiteContact',
@@ -59,7 +59,7 @@ var tasks = {
         duration: 4,
         complete: 0,
         dependence: 'SiteInstitutional',
-        resource: 'site',
+        resource: 'Site',
     },
     'SiteBanner': {
         id: 'SiteBanner',
@@ -70,7 +70,7 @@ var tasks = {
         duration: 4,
         complete: 0,
         dependence: 'SiteContact',
-        resource: 'site',
+        resource: 'Site',
     },
     'SiteGallery': {
         id: 'SiteGallery',
@@ -81,7 +81,7 @@ var tasks = {
         duration: 4,
         complete: 0,
         dependence: 'SiteBanner',
-        resource: 'site',
+        resource: 'Site',
     },
     'SiteAuth': {
         id: 'SiteAuth',
@@ -92,7 +92,7 @@ var tasks = {
         duration: 4,
         complete: 0,
         dependence: 'SiteGallery',
-        resource: 'site',
+        resource: 'Site',
     },
 
 
@@ -106,7 +106,7 @@ var tasks = {
         duration: 2,
         complete: 0,
         dependence: null,
-        resource: 'system',
+        resource: 'Sistema',
     },
 
     'SystemCast': {
@@ -118,7 +118,7 @@ var tasks = {
         duration: 4,
         complete: 0,
         dependence: 'SystemAuth',
-        resource: 'system',
+        resource: 'Sistema',
     },
 
     'Filter': {
@@ -130,7 +130,7 @@ var tasks = {
         duration: 5,
         complete: 0,
         dependence: 'SystemCast',
-        resource: 'system',
+        resource: 'Sistema',
     },
 
     'SystemMedias': {
@@ -142,7 +142,7 @@ var tasks = {
         duration: 6,
         complete: 0,
         dependence: 'Filter',
-        resource: 'system',
+        resource: 'Sistema',
     },
 
     'SystemClients': {
@@ -154,7 +154,7 @@ var tasks = {
         duration: 6,
         complete: 0,
         dependence: 'SystemMedias',
-        resource: 'system',
+        resource: 'Sistema',
     },
 
     'SystemProposals': {
@@ -166,7 +166,7 @@ var tasks = {
         duration: 6,
         complete: 0,
         dependence: 'SystemClients',
-        resource: 'system',
+        resource: 'Sistema',
     },
 
 
@@ -180,7 +180,7 @@ var tasks = {
         duration: 2,
         complete: 0,
         dependence: 'SystemProposals',
-        resource: 'services',
+        resource: 'Serviços',
     },
     'Finish': {
         id: 'Finish',
@@ -191,7 +191,7 @@ var tasks = {
         duration: 2,
         complete: 0,
         dependence: 'Deploy',
-        resource: 'services',
+        resource: 'Serviços',
     },
 
 
