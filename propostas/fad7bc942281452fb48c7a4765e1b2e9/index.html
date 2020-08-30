@@ -219,7 +219,7 @@
                         </h2>
 
                         <div class="table-responsive">
-                            <table class="table table-bordered">
+                            <table class="table table-bordered" id="tableInvestment">
                                 <thead>
                                     <tr>
                                         <th>
@@ -232,165 +232,11 @@
                                             PRAZO (dias úteis)
                                         </th>
                                         <th class="text-right" nowrap>
-                                            VALOR
+                                            VALOR (R$)
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            Planejamento
-                                        </td>
-                                        <td>
-                                            Elaboração de proposta para o projeto
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            2 dias
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            R$ 0,00
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            Desenvolvimento do Site
-                                        </td>
-                                        <td>
-                                            Criação da identidade visual (logomarca, layout, fontes, imagens, etc)
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            7 dias
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            R$ 500,00
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            Desenvolvimento do Site
-                                        </td>
-                                        <td>
-                                            <p>
-                                                Codificação completa do site em linguagem de programação (html/css/php)
-                                                compatível com os principais navegadores
-                                            </p>
-
-                                            <p>
-                                                Configuração do gerenciador de conteúdo (WordPress) para a Galeria de
-                                                Fotos e
-                                                Página Inicial
-                                            </p>
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            20 dias
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            R$ 1.800,00
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            Desenvolvimento do Sistema
-                                        </td>
-                                        <td>
-                                            <p>
-                                                Criação do painel adminstrativo
-                                            </p>
-                                            <p>
-                                                Criação dos todos os móludos
-                                            </p>
-                                            <p>
-                                                Codificação em linguagem programação compatível com os principais
-                                                navegadores
-                                            </p>
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            37 dias
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            R$ 12.000,00
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            Implantação
-                                        </td>
-                                        <td>
-                                            Contratação do serviço de hospedagem + Publicação do site na hospedagem
-                                            contratada
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            2 dias
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            R$ 0,00
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            Entrega
-                                        </td>
-                                        <td>
-                                            Criação de conta no Analytics para monitorar visitantes + treinamento da
-                                            ferramenta
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            2 dias
-                                        </td>
-                                        <td class="text-right" nowrap>
-                                            R$ 0,00
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">
-                                            SUB TOTAL SITE
-                                        </th>
-                                        <th class="text-right" nowrap>
-                                            27 dias <span class="text-danger">*</span>
-                                        </th>
-                                        <th class="text-right" nowrap>
-                                            R$ 2.300,00
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">
-                                            SUB TOTAL SISTEMA
-                                        </th>
-                                        <th class="text-right" nowrap>
-                                            37 dias <span class="text-danger">*</span>
-                                        </th>
-                                        <th class="text-right" nowrap>
-                                            R$ 12.000,00
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="2">
-                                            SUB TOTAL SERVIÇOS
-                                        </th>
-                                        <th class="text-right" nowrap>
-                                            6 dias
-                                        </th>
-                                        <th class="text-right" nowrap>
-                                            R$ 0,00
-                                        </th>
-                                    </tr>
-                                    <tr class="color-blue">
-                                        <th colspan="2">
-                                            TOTAL
-                                        </th>
-                                        <th class="text-right" nowrap>
-                                            43 dias
-                                        </th>
-                                        <th class="text-right" nowrap>
-                                            R$ 14.300,00
-                                        </th>
-                                    </tr>
-                                </tbody>
+                                <tbody></tbody>
                             </table>
 
                             <p>
@@ -420,20 +266,7 @@
 
                         <p>O cliente deverá optar por uma das opções abaixo:</p>
 
-                        <ul>
-                            <li>
-                                R$ 7.150,00 no aceite + R$ 7.150,00 na entrega
-                            </li>
-                            <li>
-                                R$ 4.766,67 no aceite + R$ 4.766,67 na entrega + R$ 4.766,67 30 dias depois
-                            </li>
-                            <li>
-                                1 + 3 de R$ 3.753,75 (juros de 5%)
-                            </li>
-                            <li>
-                                1 + 5 de R$ 2.621,67 (juros de 10%)
-                            </li>
-                        </ul>
+                        <ul id="listPayments"></ul>
                     </section>
 
                     <!-- CONDIÇÕES GERAIS -->
@@ -483,7 +316,9 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!-- <script type="text/javascript" src="/propostas/fad7bc942281452fb48c7a4765e1b2e9/chart.js"></script> -->
+    <script type="text/javascript" src="./helpers.js"></script>
     <script type="text/javascript" src="./chart.js"></script>
+    <script type="text/javascript" src="./table.js"></script>
 
 </body>
 
