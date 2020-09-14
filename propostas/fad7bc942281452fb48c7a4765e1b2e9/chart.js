@@ -309,7 +309,8 @@ var tasks = {
 
 };
 
-var initialDate = [2020, 8, 8];
+var currentDate = new Date();
+var initialDate = getNextDate([currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 5]);
 var chartTasks = generateTasks(initialDate, tasks);
 
 $(function () {
