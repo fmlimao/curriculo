@@ -123,3 +123,9 @@ p {
 b {
   color: #2c5282;
 }
+.loading {
+  display: block;
+  position: relative;
+  height: 150px;
+  text-align: center;
+}

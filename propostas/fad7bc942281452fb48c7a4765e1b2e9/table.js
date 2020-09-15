@@ -1,70 +1,8 @@
-$(function () {
-    var tableRows = [
+var tableRows = [];
+var showNewPrice = true;
+var installments = [];
 
-        {
-            fase: 'Planejamento',
-            description: '<p>Elaboração de proposta para o projeto</p>',
-            deadline: 2,
-            price: 0,
-            type: 'services',
-            realDeadline: 2,
-            newPrice: 0,
-        },
-
-        {
-            fase: 'Desenvolvimento do Site',
-            description: '<p>Criação da identidade visual (logomarca, layout, fontes, imagens, etc)</p>',
-            deadline: 7,
-            price: 500,
-            type: 'site',
-            realDeadline: 0,
-            newPrice: 300,
-        },
-
-        {
-            fase: 'Desenvolvimento do Site',
-            description: `<p> Codificação completa do site em linguagem de programação (html/css/php) compatível com os principais navegadores</p><p>Configuração do gerenciador de conteúdo (WordPress) para a Galeria de Fotos e Página Inicial</p>`,
-            deadline: 20,
-            price: 1800,
-            type: 'site',
-            realDeadline: 0,
-            newPrice: 1500,
-        },
-
-        {
-            fase: 'Desenvolvimento do Sistema',
-            description: `<p>Criação do painel adminstrativo</p><p>Criação dos todos os móludos</p><p>Codificação em linguagem programação compatível com os principais navegadores</p>`,
-            deadline: 37,
-            price: 15540,
-            type: 'system',
-            realDeadline: 37,
-            newPrice: 13210,
-        },
-
-        {
-            fase: 'Implantação',
-            description: '<p>Contratação do serviço de hospedagem + Publicação do site na hospedagem contratada <span class="text-danger">*</span></p>',
-            deadline: 2,
-            price: 0,
-            type: 'services',
-            realDeadline: 2,
-            newPrice: 0,
-        },
-
-        {
-            fase: 'Entrega',
-            description: '<p>Criação de conta no Analytics para monitorar visitantes + treinamento da ferramenta</p>',
-            deadline: 2,
-            price: 0,
-            type: 'services',
-            realDeadline: 2,
-            newPrice: 0,
-        },
-
-    ];
-
-    var showNewPrice = true;
-
+function showPriceTable() {
     var totals = {
         site: [0, 0, 0, 0],
         system: [0, 0, 0, 0],
@@ -84,7 +22,6 @@ $(function () {
 
     for (var i in tableRows) {
         var row = tableRows[i];
-
 
         $tr = $(`<tr>
             <td>
@@ -197,24 +134,14 @@ $(function () {
     $tbody.append($foot3);
     $tbody.append($foot4);
 
+    $('#loadingInvestiments').addClass('hide');
+    $('#contentInvestiments').removeClass('hide');
+
     var totalsGeneral = totals.general[showNewPrice ? 3 : 1];
-    var totalsGeneral5 = totalsGeneral * 1.05;
-    var totalsGeneral10 = totalsGeneral * 1.10;
 
     var payments = [
         `<b>R$ ${number_format(totalsGeneral / 2, 2, ',', '.')}</b> no aceite + <b>R$ ${number_format(totalsGeneral / 2, 2, ',', '.')}</b> na entrega`,
         `<b>R$ ${number_format(totalsGeneral / 3, 2, ',', '.')}</b> no aceite + <b>R$ ${number_format(totalsGeneral / 3, 2, ',', '.')}</b> na entrega + <b>R$ ${number_format(totalsGeneral / 3, 2, ',', '.')}</b> 30 dias depois`,
-        // `1 + 3 de R$ ${number_format(totalsGeneral5 / 4, 2, ',', '.')} (juros de 5%)`,
-        // `1 + 5 de R$ ${number_format(totalsGeneral5 / 6, 2, ',', '.')} (juros de 5%)`,
-        // `1 + 7 de R$ ${number_format(totalsGeneral5 / 8, 2, ',', '.')} (juros de 5%)`,
-    ];
-
-    var installments = [
-        { amount: 4, first: true, tax: 0 },
-        { amount: 6, first: true, tax: .05 },
-        // { amount: 8, first: true, tax: .05 },
-        // { amount: 10, first: true, tax: .1 },
-        { amount: 12, first: true, tax: .10 },
     ];
 
     for (var i in installments) {
@@ -227,4 +154,7 @@ $(function () {
         var payment = payments[i];
         $listPayments.append(`<li>${payment}</li>`);
     }
-});
+
+    $('#loadingPayments').addClass('hide');
+    $('#contentPayments').removeClass('hide');
+}
