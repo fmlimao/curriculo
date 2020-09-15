@@ -38,12 +38,12 @@ $(function () {
             price: 15540,
             type: 'system',
             realDeadline: 37,
-            newPrice: 12210,
+            newPrice: 13210,
         },
 
         {
             fase: 'Implantação',
-            description: '<p>Contratação do serviço de hospedagem + Publicação do site na hospedagem contratada</p>',
+            description: '<p>Contratação do serviço de hospedagem + Publicação do site na hospedagem contratada <span class="text-danger">*</span></p>',
             deadline: 2,
             price: 0,
             type: 'services',
@@ -125,7 +125,7 @@ $(function () {
             SUB TOTAL SITE
         </th>
         <th class="text-right" nowrap>
-            ${totals.site[0]} dias <span class="text-danger">*</span>
+            ${totals.site[0]} dias <span class="text-danger">**</span>
         </th>
         <th class="text-right ${showNewPrice ? 'text-danger' : ''}" style="${showNewPrice ? 'text-decoration: line-through;' : ''}" nowrap>
             ${number_format(totals.site[1], 2, ',', '.')}
@@ -143,7 +143,7 @@ $(function () {
             SUB TOTAL SISTEMA
         </th>
         <th class="text-right" nowrap>
-            ${totals.system[0]} dias <span class="text-danger">*</span>
+            ${totals.system[0]} dias <span class="text-danger">**</span>
         </th>
         <th class="text-right ${showNewPrice ? 'text-danger' : ''}" style="${showNewPrice ? 'text-decoration: line-through;' : ''}" nowrap>
             ${number_format(totals.system[1], 2, ',', '.')}
@@ -197,16 +197,30 @@ $(function () {
     $tbody.append($foot3);
     $tbody.append($foot4);
 
-    var totalsGeneral = totals.general[1];
+    var totalsGeneral = totals.general[showNewPrice ? 3 : 1];
     var totalsGeneral5 = totalsGeneral * 1.05;
     var totalsGeneral10 = totalsGeneral * 1.10;
 
     var payments = [
-        `R$ ${number_format(totalsGeneral / 2, 2, ',', '.')} no aceite + R$ ${number_format(totalsGeneral / 2, 2, ',', '.')} na entrega`,
-        `R$ ${number_format(totalsGeneral / 3, 2, ',', '.')} no aceite + R$ ${number_format(totalsGeneral / 3, 2, ',', '.')} na entrega + R$ ${number_format(totalsGeneral / 3, 2, ',', '.')} 30 dias depois`,
-        `1 + 3 de R$ ${number_format(totalsGeneral5 / 4, 2, ',', '.')} (juros de 5%)`,
-        `1 + 5 de R$ ${number_format(totalsGeneral10 / 6, 2, ',', '.')} (juros de 10%)`,
+        `<b>R$ ${number_format(totalsGeneral / 2, 2, ',', '.')}</b> no aceite + <b>R$ ${number_format(totalsGeneral / 2, 2, ',', '.')}</b> na entrega`,
+        `<b>R$ ${number_format(totalsGeneral / 3, 2, ',', '.')}</b> no aceite + <b>R$ ${number_format(totalsGeneral / 3, 2, ',', '.')}</b> na entrega + <b>R$ ${number_format(totalsGeneral / 3, 2, ',', '.')}</b> 30 dias depois`,
+        // `1 + 3 de R$ ${number_format(totalsGeneral5 / 4, 2, ',', '.')} (juros de 5%)`,
+        // `1 + 5 de R$ ${number_format(totalsGeneral5 / 6, 2, ',', '.')} (juros de 5%)`,
+        // `1 + 7 de R$ ${number_format(totalsGeneral5 / 8, 2, ',', '.')} (juros de 5%)`,
     ];
+
+    var installments = [
+        { amount: 4, first: true, tax: 0 },
+        { amount: 6, first: true, tax: .05 },
+        // { amount: 8, first: true, tax: .05 },
+        // { amount: 10, first: true, tax: .1 },
+        { amount: 12, first: true, tax: .10 },
+    ];
+
+    for (var i in installments) {
+        var installment = installments[i];
+        payments.push(`${installment.first ? '1 + ' : ''}${installment.amount - (installment.first ? 1 : 0)} de <b>R$ ${number_format((totalsGeneral * (1 + installment.tax)) / installment.amount, 2, ',', '.')}</b>${installment.tax ? ` (juros de ${installment.tax * 100}%)` : ''}`);
+    }
 
     $listPayments = $('#listPayments');
     for (var i in payments) {
