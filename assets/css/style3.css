@@ -1,0 +1,202 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #fafafa;
+}
+body {
+  position: relative;
+  padding-top: 80px;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  font-size: 18px;
+  font-weight: 600;
+}
+.navbar {
+  background-color: #fff;
+  border-color: #ff7e72;
+  color: #d81300;
+  z-index: 999;
+}
+.navbar li a {
+  color: #d81300 !important;
+  font-weight: bold !important;
+}
+.navbar li.active a {
+  background-color: #d81300 !important;
+  color: #fff !important;
+}
+.card {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07), inset 4px 0 2px -2px #ff7e72;
+  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07), inset 4px 0 2px -2px #ff7e72;
+  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07), inset 4px 0 2px -2px #ff7e72;
+}
+.card .card-header {
+  height: 48px;
+  margin-bottom: 30px;
+}
+.card .card-header .card-icon {
+  float: left;
+  background-color: #d81300;
+  margin-right: 16px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-right: 8px;
+}
+.card .card-header .card-title {
+  position: relative;
+  float: left;
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 3px;
+}
+.card .card-header .card-title .bg {
+  background-color: #d81300 !important;
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  bottom: 15px;
+  opacity: 0.2;
+  left: 0;
+}
+.card .card-header .card-title h1,
+.card .card-header .card-title h2,
+.card .card-header .card-title h3,
+.card .card-header .card-title h4 {
+  display: inline-block;
+}
+.card.profile .card-header {
+  height: 48px;
+}
+.card.profile .card-header .card-title {
+  height: 48px;
+  line-height: 48px;
+}
+.card.profile .card-header .card-title h1,
+.card.profile .card-header .card-title h2,
+.card.profile .card-header .card-title h3,
+.card.profile .card-header .card-title h4 {
+  font-size: 24px;
+}
+footer {
+  background: #1e1e1e;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  text-align: center;
+}
+footer a {
+  color: #d81300;
+  text-decoration: none;
+}
+ul.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 4px;
+  margin-top: 4px;
+}
+ul.timeline li {
+  border-left: solid 2px #ececec;
+  padding: 0 0 40px 30px;
+}
+ul.timeline li:before {
+  border-color: #d81300 !important;
+  content: "";
+  border: solid 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  font-size: 8px;
+  margin-left: -35px;
+  font-weight: 400;
+  background: #fff;
+  display: block;
+  position: absolute;
+  margin-top: -1px;
+}
+ul.timeline li:last-child {
+  border: 0;
+  margin-left: 2px;
+}
+ul.timeline li .line-title {
+  font-size: 16px;
+  line-height: 8px;
+}
+ul.timeline li span {
+  font-size: 12px;
+  padding: 9px 0;
+  display: block;
+}
+ul.timeline li .little-text {
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 13px;
+}
+ul.timeline li .icon {
+  display: inline-block;
+  background-color: #d81300;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.btn-custom-1 {
+  color: #fff;
+  background-color: #d81300;
+  border-color: #bf1100;
+  outline: none;
+}
+.btn-custom-1:hover {
+  color: #fff;
+  background-color: #bf1100;
+  border-color: #a50f00;
+}
+.btn-custom-1:not(:disabled):not(.disabled):active,
+.btn-custom-1:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #bf1100;
+  border-color: #a50f00;
+}
+.btn-custom-1.btn-rounded {
+  border-radius: 23px;
+}
+.btn-custom-1 .icon {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 8px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #d81300;
+}
