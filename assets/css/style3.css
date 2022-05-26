@@ -2,11 +2,11 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background: #fafafa;
+  background: #f9f9f9;
 }
 body {
   position: relative;
-  padding-top: 80px;
+  padding-top: 110px;
 }
 h1,
 h2,
@@ -14,23 +14,8 @@ h3,
 h4 {
   margin: 0;
   padding: 0;
-  line-height: 1.1;
   font-size: 18px;
   font-weight: 600;
-}
-.navbar {
-  background-color: #fff;
-  border-color: #ff7e72;
-  color: #d81300;
-  z-index: 999;
-}
-.navbar li a {
-  color: #d81300 !important;
-  font-weight: bold !important;
-}
-.navbar li.active a {
-  background-color: #d81300 !important;
-  color: #fff !important;
 }
 .card {
   background-color: #fff;
@@ -39,135 +24,105 @@ h4 {
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07), inset 4px 0 2px -2px #ff7e72;
-  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07), inset 4px 0 2px -2px #ff7e72;
-  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07), inset 4px 0 2px -2px #ff7e72;
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.2), inset 3px 0 0px -2px #ff7e72;
 }
 .card .card-header {
-  height: 48px;
   margin-bottom: 30px;
 }
 .card .card-header .card-icon {
   float: left;
   background-color: #d81300;
-  margin-right: 16px;
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
+  border-radius: 50%;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
   text-align: center;
   color: #fff;
-  font-size: 18px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  margin-right: 8px;
+  font-size: 12px;
 }
 .card .card-header .card-title {
   position: relative;
   float: left;
-  display: block;
-  height: 48px;
-  line-height: 48px;
   padding: 0 3px;
 }
-.card .card-header .card-title .bg {
-  background-color: #d81300 !important;
+.card .card-header .card-title::before {
+  content: "";
+  display: block;
   position: absolute;
-  height: 7px;
-  width: 100%;
-  bottom: 15px;
+  left: -3px;
+  right: -3px;
+  bottom: 2px;
+  height: 6px;
+  background-color: #d81300;
   opacity: 0.2;
-  left: 0;
 }
-.card .card-header .card-title h1,
-.card .card-header .card-title h2,
-.card .card-header .card-title h3,
-.card .card-header .card-title h4 {
-  display: inline-block;
-}
-.card.profile .card-header {
-  height: 48px;
-}
-.card.profile .card-header .card-title {
-  height: 48px;
-  line-height: 48px;
-}
-.card.profile .card-header .card-title h1,
-.card.profile .card-header .card-title h2,
-.card.profile .card-header .card-title h3,
-.card.profile .card-header .card-title h4 {
-  font-size: 24px;
-}
-footer {
-  background: #1e1e1e;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 20px;
-  color: #fff;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  text-align: center;
-}
-footer a {
-  color: #d81300;
-  text-decoration: none;
+@media screen and (min-width: 992px) {
+  .card .card-body {
+    text-align: justify;
+  }
 }
 ul.timeline {
   list-style: none;
   margin: 0;
-  padding: 0 0 0 4px;
-  margin-top: 4px;
+  margin-bottom: 15px;
+  padding: 0 0 0 12px;
 }
-ul.timeline li {
-  border-left: solid 2px #ececec;
-  padding: 0 0 40px 30px;
+ul.timeline > li {
+  position: relative;
+  padding: 0;
+  padding-left: 12px;
+  padding-bottom: 15px;
 }
-ul.timeline li:before {
-  border-color: #d81300 !important;
+ul.timeline > li::before {
   content: "";
-  border: solid 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  font-size: 8px;
-  margin-left: -35px;
-  font-weight: 400;
-  background: #fff;
   display: block;
   position: absolute;
-  margin-top: -1px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ececec;
+  width: 2px;
 }
-ul.timeline li:last-child {
-  border: 0;
-  margin-left: 2px;
+ul.timeline > li:first-child::before {
+  top: 12px;
 }
-ul.timeline li .line-title {
-  font-size: 16px;
-  line-height: 8px;
+ul.timeline > li:last-child::before {
+  bottom: auto;
+  height: 12px;
 }
-ul.timeline li span {
-  font-size: 12px;
-  padding: 9px 0;
+ul.timeline > li::after {
+  content: "";
   display: block;
+  position: absolute;
+  top: 8px;
+  left: -3px;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #d81300;
+  border-radius: 50px;
 }
-ul.timeline li .little-text {
-  font-weight: 400;
-  line-height: 18px;
-  font-size: 13px;
+ul.timeline > li .timeline-title {
+  line-height: 24px;
+  font-size: 14px !important;
 }
-ul.timeline li .icon {
+ul.timeline > li .timeline-title .timeline-title-icon {
   display: inline-block;
   background-color: #d81300;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
+}
+ul.timeline > li .timeline-title > a {
+  display: inline-block;
+}
+ul.timeline > li .timeline-little-text {
+  font-size: 14px;
 }
 .btn-custom-1 {
   color: #fff;
@@ -199,4 +154,56 @@ ul.timeline li .icon {
   line-height: 32px;
   text-align: center;
   color: #d81300;
+}
+#top-menu {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+#top-menu .navbar {
+  background-color: #fff;
+  border-color: #ffada5;
+  color: #d81300;
+}
+#top-menu .navbar .navbar-toggle {
+  border-color: #ffada5;
+}
+#top-menu .navbar .navbar-toggle .icon-bar {
+  background-color: #ffada5;
+}
+#top-menu .navbar .navbar-toggle:focus,
+#top-menu .navbar .navbar-toggle:hover {
+  background-color: #d81300;
+}
+#top-menu .navbar .navbar-toggle:focus .icon-bar,
+#top-menu .navbar .navbar-toggle:hover .icon-bar {
+  background-color: #fff;
+}
+#top-menu .navbar li a {
+  color: #d81300 !important;
+  font-weight: bold !important;
+}
+#top-menu .navbar li.active a {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+#home .download-line {
+  text-align: center;
+}
+footer {
+  background: #1e1e1e;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  text-align: center;
+}
+footer a {
+  color: #d81300;
+  text-decoration: none;
 }

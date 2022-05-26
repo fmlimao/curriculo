@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 Disallow: /cgi-bin/
-Sitemap: https://leandromacedo.dev/sitemap.xml
+Sitemap: https://fabianapacheco.com.br/sitemap.xml
