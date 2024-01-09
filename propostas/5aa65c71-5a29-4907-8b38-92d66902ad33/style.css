@@ -1,0 +1,122 @@
+.color-blue-1 {
+  color: #2b8fac;
+}
+.color-orange-1 {
+  color: #e76600;
+}
+.color-gray-1 {
+  color: #999;
+}
+a.color-orange-1 {
+  color: #e76600;
+}
+a.color-orange-1:hover {
+  color: #b44f00;
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v14/HhyJU5sn9vOmLxNkIwRSjTVNWLEJt7Ml2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v14/HhyJU5sn9vOmLxNkIwRSjTVNWLEJabMl2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v14/HhyJU5sn9vOmLxNkIwRSjTVNWLEJN7Ml2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v14/HhyJU5sn9vOmLxNkIwRSjTVNWLEJBbMl2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v14/HhyJU5sn9vOmLxNkIwRSjTVNWLEJ6bQl2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v14/HhyJU5sn9vOmLxNkIwRSjTVNWLEJ0LQl2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v14/HhyJU5sn9vOmLxNkIwRSjTVNWLEJt7Ql2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Varela';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Varela'), url(https://fonts.gstatic.com/s/varela/v10/DPEtYwqExx0AWHX5Ax4B.ttf) format('truetype');
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela', sans-serif;
+  font-size: 18px;
+  background-color: #282a35;
+}
+body {
+  min-height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main {
+  background-color: #fff;
+  padding: 30px 15px;
+  border-radius: 4px;
+}
+.proposal-date {
+  font-size: 0.75rem;
+  margin-bottom: 30px;
+  color: #999;
+}
+.page-header {
+  border: 0;
+  margin-top: 60px;
+  font-family: 'Dosis', sans-serif;
+  color: #2b8fac;
+}
+.section-header {
+  color: #e76600;
+}
+.service-list > li {
+  margin-bottom: 15px;
+}
+h4 {
+  color: #2b8fac;
+  margin-top: 20px;
+}
+section {
+  margin-bottom: 3rem;
+}
+b {
+  color: #2b8fac;
+}
+.loading {
+  display: block;
+  position: relative;
+  height: 150px;
+  text-align: center;
+}

@@ -1,0 +1,82 @@
+.btn-blue-1 {
+  color: #ffffff;
+  background-color: #2B8FAC;
+  border-color: #27839C;
+}
+.btn-blue-1:hover,
+.btn-blue-1:focus,
+.btn-blue-1:active,
+.btn-blue-1.active,
+.open .dropdown-toggle.btn-blue-1 {
+  color: #ffffff;
+  background-color: #21778F;
+  border-color: #27839C;
+}
+.btn-blue-1:active,
+.btn-blue-1.active,
+.open .dropdown-toggle.btn-blue-1 {
+  background-image: none;
+}
+.btn-blue-1.disabled,
+.btn-blue-1[disabled],
+fieldset[disabled] .btn-blue-1,
+.btn-blue-1.disabled:hover,
+.btn-blue-1[disabled]:hover,
+fieldset[disabled] .btn-blue-1:hover,
+.btn-blue-1.disabled:focus,
+.btn-blue-1[disabled]:focus,
+fieldset[disabled] .btn-blue-1:focus,
+.btn-blue-1.disabled:active,
+.btn-blue-1[disabled]:active,
+fieldset[disabled] .btn-blue-1:active,
+.btn-blue-1.disabled.active,
+.btn-blue-1[disabled].active,
+fieldset[disabled] .btn-blue-1.active {
+  background-color: #2B8FAC;
+  border-color: #27839C;
+}
+.btn-blue-1 .badge {
+  color: #2B8FAC;
+  background-color: #ffffff;
+}
+.btn-orange-1 {
+  color: #FFFFFF;
+  background-color: #E76600;
+  border-color: #D95E00;
+}
+.btn-orange-1:hover,
+.btn-orange-1:focus,
+.btn-orange-1:active,
+.btn-orange-1.active,
+.open .dropdown-toggle.btn-orange-1 {
+  color: #FFFFFF;
+  background-color: #D95E00;
+  border-color: #D95E00;
+}
+.btn-orange-1:active,
+.btn-orange-1.active,
+.open .dropdown-toggle.btn-orange-1 {
+  background-image: none;
+}
+.btn-orange-1.disabled,
+.btn-orange-1[disabled],
+fieldset[disabled] .btn-orange-1,
+.btn-orange-1.disabled:hover,
+.btn-orange-1[disabled]:hover,
+fieldset[disabled] .btn-orange-1:hover,
+.btn-orange-1.disabled:focus,
+.btn-orange-1[disabled]:focus,
+fieldset[disabled] .btn-orange-1:focus,
+.btn-orange-1.disabled:active,
+.btn-orange-1[disabled]:active,
+fieldset[disabled] .btn-orange-1:active,
+.btn-orange-1.disabled.active,
+.btn-orange-1[disabled].active,
+fieldset[disabled] .btn-orange-1.active {
+  background-color: #E76600;
+  border-color: #D95E00;
+}
+.btn-orange-1 .badge {
+  color: #E76600;
+  background-color: #FFFFFF;
+}

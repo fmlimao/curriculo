@@ -1,0 +1,253 @@
+{
+    "chart": {
+        "initialDate": [2023, 8, 18],
+        "useNextDateOnInitialDate": false,
+        "holidays": [
+            "2023-9-7",
+            "2023-10-12",
+            "2023-11-02",
+            "2023-11-15",
+            "2023-12-25",
+            "2023-12-31"
+        ],
+        "tasks": {
+            "items": {
+                "SiteLogo": {
+                    "id": "SiteLogo",
+                    "tag": "Site: Identidade Visual",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 15,
+                    "complete": 0,
+                    "dependence": null,
+                    "resource": "Site"
+                },
+                "SiteInstitutional": {
+                    "id": "SiteInstitutional",
+                    "tag": "Site: Área institucional",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 4,
+                    "complete": 0,
+                    "dependence": "SiteLogo",
+                    "resource": "Site"
+                },
+                "SiteContact": {
+                    "id": "SiteContact",
+                    "tag": "Site: Área de contato",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 4,
+                    "complete": 0,
+                    "dependence": "SiteInstitutional",
+                    "resource": "Site"
+                },
+                "SiteBanner": {
+                    "id": "SiteBanner",
+                    "tag": "Site: Banner rotativo",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 4,
+                    "complete": 0,
+                    "dependence": "SiteContact",
+                    "resource": "Site"
+                },
+                "SiteGallery": {
+                    "id": "SiteGallery",
+                    "tag": "Site: Galeria de fotos",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 4,
+                    "complete": 0,
+                    "dependence": "SiteBanner",
+                    "resource": "Site"
+                },
+                "SiteAuth": {
+                    "id": "SiteAuth",
+                    "tag": "Site: Autenticação de usuário",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 4,
+                    "complete": 0,
+                    "dependence": "SiteGallery",
+                    "resource": "Site"
+                },
+                "SystemAuth": {
+                    "id": "SystemAuth",
+                    "tag": "Sistema: Autenticação e Permissões",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 4,
+                    "complete": 0,
+                    "dependence": null,
+                    "resource": "Sistema"
+                },
+                "SystemCast": {
+                    "id": "SystemCast",
+                    "tag": "Sistema: Cadastro de Elenco",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 8,
+                    "complete": 0,
+                    "dependence": "SystemAuth",
+                    "resource": "Sistema"
+                },
+                "SystemMedias": {
+                    "id": "SystemMedias",
+                    "tag": "Sistema: Cadastro de Mídias",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 8,
+                    "complete": 0,
+                    "dependence": "SystemCast",
+                    "resource": "Sistema"
+                },
+                "SystemFilter": {
+                    "id": "SystemFilter",
+                    "tag": "Sistema: Tela de Filtro de Elenco",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 8,
+                    "complete": 0,
+                    "dependence": "SystemMedias",
+                    "resource": "Sistema"
+                },
+                "SystemClients": {
+                    "id": "SystemClients",
+                    "tag": "Sistema: Cadastro de Clientes",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 4,
+                    "complete": 0,
+                    "dependence": "SystemFilter",
+                    "resource": "Sistema"
+                },
+                "SystemProposals": {
+                    "id": "SystemProposals",
+                    "tag": "Sistema: Cadastro de Propostas",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 4,
+                    "complete": 0,
+                    "dependence": "SystemClients",
+                    "resource": "Sistema"
+                },
+                "SystemMessages": {
+                    "id": "SystemMessages",
+                    "tag": "Sistema: Automação dos envios das mensagens",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 12,
+                    "complete": 0,
+                    "dependence": "SystemProposals",
+                    "resource": "Sistema"
+                },
+                "Deploy": {
+                    "id": "Deploy",
+                    "tag": "Publicação",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 7,
+                    "complete": 0,
+                    "dependence": "SystemMessages",
+                    "resource": "Serviços"
+                },
+                "Finish": {
+                    "id": "Finish",
+                    "tag": "Analytics + Treinamento",
+                    "initial": null,
+                    "final": null,
+                    "rest": 0,
+                    "duration": 7,
+                    "complete": 0,
+                    "dependence": "Deploy",
+                    "resource": "Serviços"
+                }
+            }
+        }
+    },
+    "services": {
+        "showNewPrice": false,
+        "items": [
+            {
+                "fase": "Identidade Visual",
+                "description": "<p>Criação da identidade visual (logomarca, layout, fontes, imagens, etc)</p>",
+                "deadline": 14,
+                "price": 2000,
+                "type": "site",
+                "realDeadline": 14,
+                "newPrice": 1800,
+                "sumGroup": 0
+            },
+            {
+                "fase": "Desenvolvimento do Site",
+                "description": "<p> Codificação completa do site em linguagem de programação (html/css/php) compatível com os principais navegadores</p><p>Configuração do gerenciador de conteúdo (WordPress) para a Galeria de Fotos e Página Inicial</p>",
+                "deadline": 30,
+                "price": 5000,
+                "type": "site",
+                "realDeadline": 30,
+                "newPrice": 4500,
+                "sumGroup": 0
+            },
+            {
+                "fase": "Desenvolvimento do Sistema",
+                "description": "<p>Criação do painel adminstrativo</p><p>Criação dos todos os móludos</p><p>Codificação em linguagem programação compatível com os principais navegadores</p>",
+                "deadline": 70,
+                "price": 12000,
+                "type": "system",
+                "realDeadline": 70,
+                "newPrice": 10800,
+                "sumGroup": 1
+            },
+            {
+                "fase": "Implantação",
+                "description": "<p>Contratação do serviço de hospedagem + Publicação do site na hospedagem contratada <span class=\"text-danger\">*</span></p>",
+                "deadline": 7,
+                "price": 0,
+                "type": "services",
+                "realDeadline": 7,
+                "newPrice": 0,
+                "sumGroup": 1
+            },
+            {
+                "fase": "Entrega",
+                "description": "<p>Criação de conta no Analytics para monitorar visitantes + treinamento da ferramenta</p>",
+                "deadline": 7,
+                "price": 0,
+                "type": "services",
+                "realDeadline": 7,
+                "newPrice": 0,
+                "sumGroup": 1
+            }
+        ]
+    },
+    "payments": {
+        "discount": 0.05,
+        "items": [
+            {
+                "amount": 4,
+                "first": true,
+                "tax": 0.05
+            },
+            {
+                "amount": 6,
+                "first": true,
+                "tax": 0.10
+            }
+        ]
+    }
+}

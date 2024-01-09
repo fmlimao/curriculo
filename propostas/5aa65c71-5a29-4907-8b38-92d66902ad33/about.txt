@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Darker Grotesque
+- Font Author: Copyright 2019 The Darker Grotesque Project Authors (https://github.com/bettergui/DarkerGrotesque)
+- Font Source: http://fonts.gstatic.com/s/darkergrotesque/v8/U9MK6cuh-mLQlC4BKCtayOfARkSVgb381b-W8-QDqXw3qn7y-XFyZFUB.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
