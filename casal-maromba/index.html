@@ -8,6 +8,11 @@
 
   <!-- Bootstrap 3 CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Fontawesome 4 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,12 +20,26 @@
   <div class="container-fluid">
     <h1 class="page-header">Casal Maromba</h1>
 
+    <p style="color: #D7FB01;">
+      <!-- Texto motivacional para perder peso -->
+      <em>“A dor que você sente hoje é a força que você sente amanhã.”</em>
+    </p>
+
+    <p>
+      <a href="https://docs.google.com/spreadsheets/d/1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w/edit#gid=0"
+        target="_blank">
+        Abrir planilha
+        <span class="fa fa-external-link"></span>
+      </a>
+    </p>
+
     <div class="row">
 
       <div class="col-xs-12 col-md-6">
         <h2 class="page-header">Fabi</h2>
 
         <div id="chartFabi"></div>
+        <div id="tableFabi"></div>
       </div>
       <!-- /.col -->
 
@@ -28,6 +47,7 @@
         <h2 class="page-header">Lele</h2>
 
         <div id="chartLele"></div>
+        <div id="tableLele"></div>
       </div>
       <!-- /.col -->
 
@@ -40,64 +60,95 @@
   <!-- Google Charts CDN -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-
   <script>
-    google.charts.load('current', { packages: ['corechart', 'line'] });
-    google.charts.setOnLoadCallback(drawFabi);
-    google.charts.setOnLoadCallback(drawLele);
+    const charts = [
+      { chartId: 'chartFabi', tableId: 'tableFabi', sheetId: '0' },
+      { chartId: 'chartLele', tableId: 'tableLele', sheetId: '1045979550' },
+    ]
 
-    function drawFabi() {
-      const path = 'https://docs.google.com/spreadsheets/d/1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w/gviz/tq?gid=0&headers=1'
-      var query = new google.visualization.Query(path);
-      query.send(handleQueryResponseFabi);
-    }
+    google.charts.load('current', { packages: ['corechart', 'line', 'table'] });
 
-    function handleQueryResponseFabi(response) {
-      if (response.isError()) {
-        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
-        return;
-      }
+    google.charts.setOnLoadCallback(drawCharts);
 
-      var options = {
-        // height: 400,
-        hAxis: {
-          title: 'Dias'
+    const lineChartOptions = {
+      hAxis: {
+        title: 'Dias',
+        titleTextStyle: {
+          color: '#fff'
         },
-        vAxis: {
-          title: 'Peso',
-        }
-      };
-
-      var data = response.getDataTable();
-      var chart = new google.visualization.LineChart(document.getElementById('chartFabi'));
-      chart.draw(data, options);
-    }
-
-    function drawLele() {
-      const path = 'https://docs.google.com/spreadsheets/d/1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w/gviz/tq?gid=1045979550&headers=1'
-      var query = new google.visualization.Query(path);
-      query.send(handleQueryResponseLele);
-    }
-
-    function handleQueryResponseLele(response) {
-      if (response.isError()) {
-        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
-        return;
-      }
-
-      var options = {
-        // height: 400,
-        hAxis: {
-          title: 'Dias'
+        textStyle: {
+          color: '#fff'
         },
-        vAxis: {
-          title: 'Peso',
-        }
-      };
+      },
+      vAxis: {
+        title: 'Peso',
+        titleTextStyle: {
+          color: '#fff'
+        },
+        textStyle: {
+          color: '#fff'
+        },
+      },
+      backgroundColor: '#222',
+      colors: ['#D7FB01', '#f00'],
+      titleTextStyle: {
+        color: '#fff'
+      },
+      chartArea: {
+        left: 50,
+        top: 50,
+        bottom: 50,
+        width: '100%',
+      },
+    }
 
-      var data = response.getDataTable();
-      var chart = new google.visualization.LineChart(document.getElementById('chartLele'));
-      chart.draw(data, options);
+    const tableChartOptions = {
+      showRowNumber: false,
+      width: '100%',
+      height: '100%',
+      backgroundColor: '#222',
+      cssClassNames: {
+        headerRow: 'header-row',
+        tableRow: 'table-row',
+        oddTableRow: 'odd-table-row',
+        selectedTableRow: 'selected-table-row',
+        hoverTableRow: 'hover-table-row',
+        headerCell: 'header-cell',
+        tableCell: 'table-cell',
+        rowNumberCell: 'row-number-cell',
+      },
+    }
+
+    function drawCharts() {
+      for (const chart of charts) {
+        const path = `https://docs.google.com/spreadsheets/d/1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w/gviz/tq?gid=${chart.sheetId}&headers=1`
+        const query = new google.visualization.Query(path)
+        query.send(handleQueryResponse(chart))
+      }
+    }
+
+    function handleQueryResponse(chart) {
+      return (response) => {
+        if (response.isError()) {
+          alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage())
+          return null
+        }
+
+        drawLineChart(chart.chartId, response)
+        drawTableChart(chart.tableId, response)
+      }
+    }
+
+    function drawLineChart(chartId, response) {
+      const data = response.getDataTable()
+      const chart = new google.visualization.LineChart(document.getElementById(chartId))
+      chart.draw(data, lineChartOptions)
+    }
+
+    function drawTableChart(tableId, response) {
+      const data = response.getDataTable()
+      const table = new google.visualization.Table(document.getElementById(tableId))
+      table.draw(data, tableChartOptions)
     }
 
   </script>

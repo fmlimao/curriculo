@@ -1,0 +1,2 @@
+/*O_o*/
+google.visualization.Query.setResponse({"version":"0.6","reqId":"0","status":"error","errors":[{"reason":"invalid_query","message":"INVALID_QUERY","detailed_message":"Invalid query: NO_COLUMN: H"}]});
