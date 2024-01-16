@@ -66,7 +66,7 @@
       { chartId: 'chartLele', tableId: 'tableLele', sheetId: '1045979550' },
     ]
 
-    google.charts.load('current', { packages: ['corechart', 'line', 'table'] });
+    google.charts.load('current', { packages: ['corechart', 'line', 'table', 'bar'] });
 
     google.charts.setOnLoadCallback(drawCharts);
 
@@ -121,7 +121,8 @@
 
     function drawCharts() {
       for (const chart of charts) {
-        const path = `https://docs.google.com/spreadsheets/d/1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w/gviz/tq?gid=${chart.sheetId}&headers=1`
+        const queryString = encodeURIComponent('SELECT A, B');
+        const path = `https://docs.google.com/spreadsheets/d/1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w/gviz/tq?gid=${chart.sheetId}&headers=1&tq=${queryString}`
         const query = new google.visualization.Query(path)
         query.send(handleQueryResponse(chart))
       }
@@ -142,6 +143,7 @@
     function drawLineChart(chartId, response) {
       const data = response.getDataTable()
       const chart = new google.visualization.LineChart(document.getElementById(chartId))
+      // const chart = new google.visualization.ColumnChart(document.getElementById(chartId))
       chart.draw(data, lineChartOptions)
     }
 
