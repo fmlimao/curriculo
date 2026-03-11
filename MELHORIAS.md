@@ -59,16 +59,16 @@ Melhorar o site pessoal em `index.html` com foco em:
 
 ### 6. Reorganizar a seção de experiências
 
-- Padronizar cada experiência com:
+- [x] Padronizar cada experiência com:
   - empresa
   - cargo
-  - período
   - principais responsabilidades
   - tecnologias usadas
-  - resultados ou impacto
-- Melhorar a hierarquia semântica dos títulos.
-- Evitar repetição excessiva de frases como “Desenvolvimento e manutenção de sistemas em geral”.
-- Destacar o que diferencia cada experiência.
+- [ ] Adicionar período em cada experiência.
+- [ ] Adicionar resultados ou impacto em cada experiência.
+- [x] Melhorar a hierarquia semântica dos títulos.
+- [x] Evitar repetição excessiva de frases como “Desenvolvimento e manutenção de sistemas em geral”.
+- [x] Destacar o que diferencia cada experiência.
 
 ### 7. Melhorar a seção de habilidades
 
