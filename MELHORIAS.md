@@ -132,6 +132,10 @@ Melhorar o site pessoal em `index.html` com foco em:
 - Considerar migrar experiências, habilidades e metadados para um formato estruturado.
 - Avaliar uma versão futura com geração estática ou componentes reutilizáveis, sem perder simplicidade.
 
+### 15. Ajustes de layout
+
+- [x] Reorganizar o header com nome em uma linha, cargo em outra e contatos logo abaixo.
+
 ## Itens que podem ser removidos ou revisados
 
 - `meta keywords`, pois tem pouco ou nenhum valor prático hoje.
