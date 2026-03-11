@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Minado</title>
+    <style>
+        :after,
+        :before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            padding: 0 20px;
+            background-color: #eee;
+        }
+
+        .game-box {
+            background-color: #c0c0c0;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #fff #808080 #808080 #fff;
+            padding: 6px;
+            min-width: 100px;
+            min-height: 100px;
+        }
+
+        .inner-box {
+            border-width: 2px;
+            border-style: solid;
+            border-color: #808080 #fff #fff #808080;
+            min-width: 84px;
+            min-height: 84px;
+        }
+
+        .row {
+            min-width: 80px;
+            height: 20px;
+        }
+
+        .col {
+            float: left;
+            width: 20px;
+            height: 20px;
+        }
+
+        button.btn-action {
+            display: block;
+            background-color: #C0C0C0;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #fff #808080 #808080 #fff;
+            margin: 0;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            line-height: 16px;
+            color: #333;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button.opened {
+            border-width: 0 1px 1px 0;
+            border-style: solid;
+            border-color: #fff #808080 #808080 #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Campo Minado</h1>
+
+    <p>
+        Largura (10 - 50):<br>
+        <input type="number" id="width" value="10" style="width: 60px; text-align: right;">
+    </p>
+
+    <p>
+        Altura (10 - 50):<br>
+        <input type="number" id="height" value="10" style="width: 60px; text-align: right;">
+    </p>
+
+    <p>
+        Bombas (10% - 90%):<br>
+        <input type="number" id="bombs" value="10" style="width: 60px; text-align: right;">
+    </p>
+
+    <p>
+        <button class="btn-reset">Iniciar</button>
+    </p>
+
+    <div class="game-box" id="table" style="width: 100px; height: 100px;">
+
+        <div class="inner-box">
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
