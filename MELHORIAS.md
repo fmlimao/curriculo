@@ -72,14 +72,14 @@ Melhorar o site pessoal em `index.html` com foco em:
 
 ### 7. Melhorar a seção de habilidades
 
-- Separar habilidades por categorias:
+- [x] Separar habilidades por categorias:
   - backend
   - frontend
   - mobile
   - banco de dados
   - liderança e arquitetura
-- Remover tecnologias irrelevantes, antigas demais ou pouco estratégicas, se não fizerem mais sentido para o posicionamento atual.
-- Ordenar as stacks pela relevância atual.
+- [x] Remover tecnologias irrelevantes, antigas demais ou pouco estratégicas, se não fizerem mais sentido para o posicionamento atual.
+- [x] Ordenar as stacks pela relevância atual.
 
 ### 8. Melhorar a seção de formação
 
