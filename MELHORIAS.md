@@ -13,10 +13,10 @@ Melhorar o site pessoal em `index.html` com foco em:
 
 ### 1. Atualizar os metadados principais
 
-- Reescrever a tag `<title>` com posicionamento mais específico.
-- Reescrever a `meta description` com linguagem natural e foco nas principais especialidades.
-- Corrigir termos desatualizados ou com erro de escrita, como `Boostrap`.
-- Atualizar o `copyright`.
+- [x] Reescrever a tag `<title>` com posicionamento mais específico.
+- [x] Reescrever a `meta description` com linguagem natural e foco nas principais especialidades.
+- [x] Corrigir termos desatualizados ou com erro de escrita, como `Boostrap`.
+- [x] Atualizar o `copyright`.
 - Revisar `theme-color`.
 
 ### 2. Corrigir e modernizar analytics
