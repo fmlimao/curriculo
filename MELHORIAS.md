@@ -100,24 +100,24 @@ Melhorar o site pessoal em `index.html` com foco em:
 
 ### 10. Melhorar os links de contato
 
-- Adicionar `rel="noopener noreferrer"` em links externos com `target="_blank"`.
-- Avaliar exibir texto junto com ícones para melhorar acessibilidade e clareza.
-- Confirmar se todos os links ainda estão corretos e atuais.
+- [x] Adicionar `rel="noopener noreferrer"` em links externos com `target="_blank"`.
+- [ ] Avaliar exibir texto junto com ícones para melhorar acessibilidade e clareza.
+- [ ] Confirmar se todos os links ainda estão corretos e atuais.
 
 ## Prioridade baixa
 
 ### 11. Refinar semântica HTML
 
-- Revisar uso de `header`, `section`, `article`, `aside` e `address`.
-- Garantir hierarquia consistente entre `h1`, `h2`, `h3` e `h4`.
-- Avaliar se parte do microdata atual deve ser removida para evitar marcação incompleta ou confusa.
+- [x] Revisar uso de `header`, `section`, `article`, `aside` e `address`.
+- [x] Garantir hierarquia consistente entre `h1`, `h2`, `h3` e `h4`.
+- [x] Avaliar se parte do microdata atual deve ser removida para evitar marcação incompleta ou confusa.
 
 ### 12. Melhorar acessibilidade
 
-- Garantir nomes acessíveis para links só com ícone.
-- Revisar contraste de cores.
-- Avaliar foco visível nos elementos interativos.
-- Revisar alternativa textual de imagens.
+- [x] Garantir nomes acessíveis para links só com ícone.
+- [x] Revisar contraste de cores.
+- [x] Avaliar foco visível nos elementos interativos.
+- [x] Revisar alternativa textual de imagens.
 
 ### 13. Revisar performance básica
 

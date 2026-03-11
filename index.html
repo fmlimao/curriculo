@@ -69,11 +69,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
+  <style>
+    a:focus-visible {
+      outline: 3px solid #2b6cb0 !important;
+      outline-offset: 3px;
+      border-radius: 9999px;
+    }
+  </style>
 </head>
 
 <body class="text-gray-800">
 
-  <main class="py-6 md:py-12 lg:py-20" itemscope itemtype="http://schema.org/Person">
+  <main class="py-6 md:py-12 lg:py-20">
 
     <header class="py-6">
       <div class="container mx-auto px-4">
@@ -83,59 +90,62 @@
             <div class="px-2 w-5/12 clearfix md:w-3/12">
               <div
                 class="rounded-full overflow-hidden border border-solid border-gray-400 bg-white float-left p-1 md:float-right md:w-32">
-                <img src="assets/img/leandro-macedo.jpg" alt="Leandro Macedo" class="rounded-full w-full">
+                <img src="assets/img/leandro-macedo.jpg" alt="Foto de perfil de Leandro Macedo" class="rounded-full w-full">
               </div>
             </div>
 
             <div class="px-2 w-7/12 md:w-4/12">
               <div class="font-dosis uppercase">
-                <h1 class="text-4xl font-medium leading-none md:text-5xl" itemprop="name">
+                <h1 class="text-4xl font-medium leading-none md:text-5xl">
                   Leandro<br>
                   <span class="text-blue-700">Macedo</span>
                 </h1>
-                <h2 class="text-xl md:text-2xl" itemprop="jobTitle">Desenvolvedor</h2>
+                <p class="text-xl md:text-2xl">Desenvolvedor</p>
               </div>
             </div>
 
             <div class="px-2 w-full md:w-5/12">
               <aside>
-                <address class="flex text-center not-italic pt-4 text-xl md:pt-12 text-gray-500">
+                <address class="flex text-center not-italic pt-4 text-xl md:pt-12 text-gray-700">
                   <p class="w-1/4 text-center">
-                    <strong itemprop="telephone">
+                    <strong>
                       <a href="https://api.whatsapp.com/send?phone=5511987391075"
-                        class="transition ease-in duration-200 inline-block w-8 h-8 rounded-full text-gray-500 hover:text-white hover:bg-blue-400 outline-none"
-                        target="_blank">
-                        <span class="fa fa-whatsapp"></span>
+                        class="transition ease-in duration-200 inline-block w-8 h-8 rounded-full text-gray-700 hover:text-white hover:bg-blue-400 outline-none"
+                        target="_blank" rel="noopener noreferrer" aria-label="Entrar em contato pelo WhatsApp"
+                        title="WhatsApp">
+                        <span class="fa fa-whatsapp" aria-hidden="true"></span>
                       </a>
                     </strong>
                   </p>
 
                   <p class="w-1/4 text-center">
-                    <strong itemprop="email">
+                    <strong>
                       <a href="mailto:fmlimao@gmail.com"
-                        class="transition ease-in duration-200 inline-block w-8 h-8 rounded-full text-gray-500 hover:text-white hover:bg-blue-400 outline-none"
-                        target="_blank">
-                        <span class="fa fa-envelope-o"></span>
+                        class="transition ease-in duration-200 inline-block w-8 h-8 rounded-full text-gray-700 hover:text-white hover:bg-blue-400 outline-none"
+                        target="_blank" aria-label="Enviar e-mail para Leandro Macedo" title="E-mail">
+                        <span class="fa fa-envelope-o" aria-hidden="true"></span>
                       </a>
                     </strong>
                   </p>
 
                   <p class="w-1/4 text-center">
-                    <strong itemprop="follows">
+                    <strong>
                       <a href="https://github.com/fmlimao"
-                        class="transition ease-in duration-200 inline-block w-8 h-8 rounded-full text-gray-500 hover:text-white hover:bg-blue-400 outline-none"
-                        target="_blank">
-                        <span class="fa fa-github"></span>
+                        class="transition ease-in duration-200 inline-block w-8 h-8 rounded-full text-gray-700 hover:text-white hover:bg-blue-400 outline-none"
+                        target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil no GitHub"
+                        title="GitHub">
+                        <span class="fa fa-github" aria-hidden="true"></span>
                       </a>
                     </strong>
                   </p>
 
                   <p class="w-1/4 text-center">
-                    <strong itemprop="follows">
+                    <strong>
                       <a href="https://www.linkedin.com/in/leandro-macedo-51312265/"
-                        class="transition ease-in duration-200 inline-block w-8 h-8 rounded-full text-gray-500 hover:text-white hover:bg-blue-400 outline-none"
-                        target="_blank">
-                        <span class="fa fa-linkedin"></span>
+                        class="transition ease-in duration-200 inline-block w-8 h-8 rounded-full text-gray-700 hover:text-white hover:bg-blue-400 outline-none"
+                        target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil no LinkedIn"
+                        title="LinkedIn">
+                        <span class="fa fa-linkedin" aria-hidden="true"></span>
                       </a>
                     </strong>
                   </p>
@@ -151,7 +161,7 @@
       <div class="container mx-auto px-4 sm:px-12 md:px-4">
         <header class="flex flex-wrap -mx-2">
           <div class="px-2 w-full md:w-3/12">
-            <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">Sobre Mim</h3>
+            <h2 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">Sobre Mim</h2>
           </div>
 
           <div class="px-2 w-full md:w-9/12">
@@ -164,7 +174,7 @@
             <div class="px-2 w-full md:w-3/12"></div>
 
             <div class="px-2 w-full md:w-9/12">
-              <div itemprop="knowsAbout">
+              <div>
                 <p>
                   Sou desenvolvedor full stack com 23 anos de experiência em desenvolvimento de
                   sites, sistemas web, APIs e aplicações para celular. Atuo com PHP, Node.js e
@@ -185,7 +195,7 @@
           <div class="px-2 w-full md:w-3/12">
             <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">
               Experiências
-            </h3>
+            </h2>
           </div>
 
           <div class="px-2 w-full md:w-9/12">
@@ -202,9 +212,9 @@
             </div>
 
             <div class="px-2 w-full md:w-9/12">
-              <h4 class="uppercase leading-none mb-3 font-dosis font-semibold">
+              <h3 class="uppercase leading-none mb-3 font-dosis font-semibold">
                 Movida Aluguel de Carros
-              </h4>
+              </h3>
               <ul class="text-sm mb-3">
                 <li class="mb-2 border-l-2 border-blue-200 pl-2">
                   Liderança técnica do desenvolvimento web.
@@ -230,9 +240,9 @@
             </div>
 
             <div class="px-2 w-full md:w-9/12">
-              <h4 class="uppercase leading-none mb-3 font-dosis font-semibold">
+              <h3 class="uppercase leading-none mb-3 font-dosis font-semibold">
                 Sodré Santoro Leiloeiro Oficial
-              </h4>
+              </h3>
               <ul class="text-sm mb-3">
                 <li class="mb-2 border-l-2 border-blue-200 pl-2">
                   Liderança técnica do desenvolvimento web.
@@ -258,9 +268,9 @@
             </div>
 
             <div class="px-2 w-full md:w-9/12">
-              <h4 class="uppercase leading-none mb-3 font-dosis font-semibold">
+              <h3 class="uppercase leading-none mb-3 font-dosis font-semibold">
                 Blue Service
-              </h4>
+              </h3>
               <ul class="text-sm mb-3">
                 <li class="mb-2 border-l-2 border-blue-200 pl-2">
                   Liderança técnica do desenvolvimento web.
@@ -283,9 +293,9 @@
             </div>
 
             <div class="px-2 w-full md:w-9/12">
-              <h4 class="uppercase leading-none mb-3 font-dosis font-semibold">
+              <h3 class="uppercase leading-none mb-3 font-dosis font-semibold">
                 Prodoctor RX - Marketing Farmacêutico
-              </h4>
+              </h3>
               <ul class="text-sm mb-3">
                 <li class="mb-2 border-l-2 border-blue-200 pl-2">
                   Desenvolvimento e manutenção de sistemas web voltados ao negócio.
@@ -305,9 +315,9 @@
             </div>
 
             <div class="px-2 w-full md:w-9/12">
-              <h4 class="uppercase leading-none mb-3 font-dosis font-semibold">
+              <h3 class="uppercase leading-none mb-3 font-dosis font-semibold">
                 Nu Design
-              </h4>
+              </h3>
               <ul class="text-sm mb-3">
                 <li class="mb-2 border-l-2 border-blue-200 pl-2">
                   Desenvolvimento e manutenção de sistemas web.
@@ -327,9 +337,9 @@
             </div>
 
             <div class="px-2 w-full md:w-9/12">
-              <h4 class="uppercase leading-none mb-3 font-dosis font-semibold">
+              <h3 class="uppercase leading-none mb-3 font-dosis font-semibold">
                 DIGIPIX Soluções em Fotografia Digital
-              </h4>
+              </h3>
               <ul class="text-sm mb-3">
                 <li class="mb-2 border-l-2 border-blue-200 pl-2">
                   Desenvolvimento e manutenção de sistemas web.
@@ -352,9 +362,9 @@
             </div>
 
             <div class="px-2 w-full md:w-9/12">
-              <h4 class="uppercase leading-none mb-3 font-dosis font-semibold">
+              <h3 class="uppercase leading-none mb-3 font-dosis font-semibold">
                 Colégio Serrano Guardia
-              </h4>
+              </h3>
               <ul class="text-sm mb-3">
                 <li class="mb-2 border-l-2 border-blue-200 pl-2">
                   Desenvolvimento e manutenção de sistemas web.
@@ -380,9 +390,9 @@
       <div class="container mx-auto px-4 sm:px-12 md:px-4">
         <header class="flex flex-wrap -mx-2">
           <div class="px-2 w-full md:w-3/12">
-            <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">
+            <h2 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">
               Habilidades
-            </h3>
+            </h2>
           </div>
 
           <div class="px-2 w-full md:w-9/12">
@@ -425,9 +435,9 @@
       <div class="container mx-auto px-4 sm:px-12 md:px-4">
         <header class="flex flex-wrap -mx-2">
           <div class="px-2 w-full md:w-3/12">
-            <h3 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">
+            <h2 class="uppercase text-xl font-bold font-dosis leading-none md:text-right">
               Formação
-            </h3>
+            </h2>
           </div>
 
           <div class="px-2 w-full md:w-9/12">
@@ -438,29 +448,29 @@
         <div class="pt-8">
           <article class="flex flex-wrap -mx-2 mb-8">
             <div class="px-2 w-full md:w-3/12">
-              <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
+              <h3 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
                 Ciências da Computação
-              </h4>
+              </h3>
             </div>
 
             <div class="px-2 w-full md:w-9/12">
-              <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
+              <p class="uppercase leading-none mb-2 font-dosis font-semibold">
                 Centro Universitário Nove de Julho
-              </h3>
+              </p>
             </div>
           </article>
 
           <article class="flex flex-wrap -mx-2 mb-8">
             <div class="px-2 w-full md:w-3/12">
-              <h4 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
+              <h3 class="uppercase font-bold font-dosis text-blue-700 leading-none mb-2 md:text-right">
                 Ensino Médio e Técnico
-              </h4>
+              </h3>
             </div>
 
             <div class="px-2 w-full md:w-9/12">
-              <h3 class="uppercase leading-none mb-2 font-dosis font-semibold">
+              <p class="uppercase leading-none mb-2 font-dosis font-semibold">
                 Colégio Serrano Guardia
-              </h3>
+              </p>
             </div>
           </article>
         </div>
