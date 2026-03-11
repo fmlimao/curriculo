@@ -47,13 +47,13 @@ Melhorar o site pessoal em `index.html` com foco em:
 
 ### 5. Melhorar o posicionamento do conteúdo principal
 
-- Reescrever a seção `Sobre Mim` para deixar claro:
+- [x] Reescrever a seção `Sobre Mim` para deixar claro:
   - especialidade principal
   - tempo de experiência
   - tipo de produto/sistema que desenvolve
   - senioridade técnica e liderança
-- Evitar texto genérico demais.
-- Escrever pensando em como alguém pesquisaria por esse perfil no Google.
+- [x] Evitar texto genérico demais.
+- [x] Escrever pensando em como alguém pesquisaria por esse perfil no Google.
 
 ## Prioridade média
 
