@@ -17,7 +17,7 @@ Melhorar o site pessoal em `index.html` com foco em:
 - [x] Reescrever a `meta description` com linguagem natural e foco nas principais especialidades.
 - [x] Corrigir termos desatualizados ou com erro de escrita, como `Boostrap`.
 - [x] Atualizar o `copyright`.
-- Revisar `theme-color`.
+- [x] Revisar `theme-color`.
 
 ### 2. Corrigir e modernizar analytics
 
@@ -27,10 +27,10 @@ Melhorar o site pessoal em `index.html` com foco em:
 
 ### 3. Adicionar SEO técnico essencial
 
-- Incluir tag `canonical` apontando para a URL principal.
-- Adicionar metadados de compartilhamento para Twitter Card.
-- Adicionar `og:locale`.
-- Garantir que `og:title`, `og:description` e `og:image` estejam consistentes com o conteúdo atual.
+- [x] Incluir tag `canonical` apontando para a URL principal.
+- [x] Adicionar metadados de compartilhamento para Twitter Card.
+- [x] Adicionar `og:locale`.
+- [x] Garantir que `og:title`, `og:description` e `og:image` estejam consistentes com o conteúdo atual.
 
 ### 4. Estruturar dados com JSON-LD
 
