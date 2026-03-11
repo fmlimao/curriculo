@@ -34,8 +34,8 @@ Melhorar o site pessoal em `index.html` com foco em:
 
 ### 4. Estruturar dados com JSON-LD
 
-- Adicionar um bloco JSON-LD com schema `Person`.
-- Incluir:
+- [x] Adicionar um bloco JSON-LD com schema `Person`.
+- [x] Incluir:
   - nome
   - cargo principal
   - URL do site
@@ -43,7 +43,7 @@ Melhorar o site pessoal em `index.html` com foco em:
   - e-mail
   - perfis sociais (`sameAs`)
   - descrição profissional
-- Avaliar inclusão de `knowsAbout` com as principais stacks e especialidades.
+- [x] Avaliar inclusão de `knowsAbout` com as principais stacks e especialidades.
 
 ### 5. Melhorar o posicionamento do conteúdo principal
 
