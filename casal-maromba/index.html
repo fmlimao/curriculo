@@ -1,158 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casal Maromba</title>
 
-  <!-- Bootstrap 3 CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-  <!-- Fontawesome 4 CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container-fluid">
-    <h1 class="page-header">Casal Maromba</h1>
-
-    <p style="color: #D7FB01;">
-      <!-- Texto motivacional para perder peso -->
-      <em>“A dor que você sente hoje é a força que você sente amanhã.”</em>
-    </p>
-
-    <p>
-      <a href="https://docs.google.com/spreadsheets/d/1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w/edit#gid=0"
-        target="_blank">
-        Abrir planilha
-        <span class="fa fa-external-link"></span>
-      </a>
-    </p>
-
-    <div class="row">
-
-      <div class="col-xs-12 col-md-6">
-        <h2 class="page-header">Fabi</h2>
-
-        <div id="chartFabi"></div>
-        <div id="tableFabi"></div>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge">
+          <i class="bi bi-lightning-charge-fill"></i>
+          Acompanhamento de peso
+        </span>
+        <h1 class="hero-title">Casal <span class="accent">Maromba</span></h1>
+        <p class="hero-quote">
+          <i class="bi bi-quote"></i>
+          A dor que você sente hoje é a força que você sente amanhã.
+        </p>
+        <a class="btn btn-accent btn-lg"
+          href="https://docs.google.com/spreadsheets/d/1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w/edit#gid=0"
+          target="_blank" rel="noopener">
+          <i class="bi bi-table"></i>
+          Abrir planilha
+          <i class="bi bi-box-arrow-up-right ms-1"></i>
+        </a>
       </div>
-      <!-- /.col -->
+    </div>
+  </header>
 
-      <div class="col-xs-12 col-md-6">
-        <h2 class="page-header">Lele</h2>
+  <main class="container pb-5">
+    <div class="row g-4">
 
-        <div id="chartLele"></div>
-        <div id="tableLele"></div>
+      <div class="col-12 col-lg-6">
+        <article class="person-card" data-person="fabi">
+          <div class="person-card__header">
+            <div class="person-avatar person-avatar--fabi">
+              <i class="bi bi-heart-pulse-fill"></i>
+            </div>
+            <div>
+              <span class="person-card__label">Atleta</span>
+              <h2 class="person-card__name">Fabi</h2>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat">
+              <span class="stat__label">Peso atual</span>
+              <span class="stat__value" data-stat="current">—</span>
+              <span class="stat__unit">kg</span>
+            </div>
+            <div class="stat">
+              <span class="stat__label">Variação total</span>
+              <span class="stat__value" data-stat="variation">—</span>
+              <span class="stat__unit">kg</span>
+            </div>
+            <div class="stat">
+              <span class="stat__label">Última medição</span>
+              <span class="stat__value stat__value--sm" data-stat="last">—</span>
+            </div>
+          </div>
+
+          <div class="chart-wrapper">
+            <div id="chartFabi" class="chart"></div>
+          </div>
+
+          <div class="table-wrapper">
+            <div id="tableFabi" class="data-table"></div>
+          </div>
+        </article>
       </div>
-      <!-- /.col -->
+
+      <div class="col-12 col-lg-6">
+        <article class="person-card" data-person="lele">
+          <div class="person-card__header">
+            <div class="person-avatar person-avatar--lele">
+              <i class="bi bi-fire"></i>
+            </div>
+            <div>
+              <span class="person-card__label">Atleta</span>
+              <h2 class="person-card__name">Lele</h2>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat">
+              <span class="stat__label">Peso atual</span>
+              <span class="stat__value" data-stat="current">—</span>
+              <span class="stat__unit">kg</span>
+            </div>
+            <div class="stat">
+              <span class="stat__label">Variação total</span>
+              <span class="stat__value" data-stat="variation">—</span>
+              <span class="stat__unit">kg</span>
+            </div>
+            <div class="stat">
+              <span class="stat__label">Última medição</span>
+              <span class="stat__value stat__value--sm" data-stat="last">—</span>
+            </div>
+          </div>
+
+          <div class="chart-wrapper">
+            <div id="chartLele" class="chart"></div>
+          </div>
+
+          <div class="table-wrapper">
+            <div id="tableLele" class="data-table"></div>
+          </div>
+        </article>
+      </div>
 
     </div>
-    <!-- /.row -->
+  </main>
 
-  </div>
-  <!-- /.container -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <small>Feito com <i class="bi bi-heart-fill text-accent"></i> para o Casal Maromba</small>
+    </div>
+  </footer>
 
-  <!-- Google Charts CDN -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <script>
+    const SPREADSHEET_ID = '1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w';
+    const ACCENT = '#D7FB01';
+    const ACCENT_SOFT = 'rgba(215, 251, 1, 0.15)';
+
     const charts = [
-      { chartId: 'chartFabi', tableId: 'tableFabi', sheetId: '0' },
-      { chartId: 'chartLele', tableId: 'tableLele', sheetId: '1045979550' },
-    ]
+      { chartId: 'chartFabi', tableId: 'tableFabi', sheetId: '0', personEl: () => document.querySelector('[data-person="fabi"]') },
+      { chartId: 'chartLele', tableId: 'tableLele', sheetId: '1045979550', personEl: () => document.querySelector('[data-person="lele"]') },
+    ];
 
     google.charts.load('current', { packages: ['corechart', 'line', 'table', 'bar'] });
-
     google.charts.setOnLoadCallback(drawCharts);
 
     const lineChartOptions = {
       hAxis: {
-        title: 'Dias',
-        titleTextStyle: {
-          color: '#fff'
-        },
-        textStyle: {
-          color: '#fff'
-        },
+        textStyle: { color: '#8a8a8a', fontName: 'Inter', fontSize: 11 },
+        gridlines: { color: 'transparent' },
+        baselineColor: 'transparent',
       },
       vAxis: {
-        title: 'Peso',
-        titleTextStyle: {
-          color: '#fff'
-        },
-        textStyle: {
-          color: '#fff'
-        },
+        textStyle: { color: '#8a8a8a', fontName: 'Inter', fontSize: 11 },
+        gridlines: { color: '#262626', count: 5 },
+        baselineColor: '#262626',
       },
-      backgroundColor: '#222',
-      colors: ['#D7FB01', '#f00'],
-      titleTextStyle: {
-        color: '#fff'
-      },
-      chartArea: {
-        left: 50,
-        top: 50,
-        bottom: 50,
-        width: '100%',
-      },
-    }
+      backgroundColor: 'transparent',
+      colors: [ACCENT],
+      legend: { position: 'none' },
+      chartArea: { left: 50, top: 20, right: 20, bottom: 40 },
+      curveType: 'function',
+      lineWidth: 3,
+      pointSize: 6,
+      pointShape: 'circle',
+      tooltip: { textStyle: { fontName: 'Inter', fontSize: 12 } },
+    };
 
     const tableChartOptions = {
       showRowNumber: false,
       width: '100%',
       height: '100%',
-      backgroundColor: '#222',
+      allowHtml: true,
       cssClassNames: {
-        headerRow: 'header-row',
-        tableRow: 'table-row',
-        oddTableRow: 'odd-table-row',
-        selectedTableRow: 'selected-table-row',
-        hoverTableRow: 'hover-table-row',
-        headerCell: 'header-cell',
-        tableCell: 'table-cell',
-        rowNumberCell: 'row-number-cell',
+        headerRow: 'tbl-header-row',
+        tableRow: 'tbl-row',
+        oddTableRow: 'tbl-odd-row',
+        selectedTableRow: 'tbl-selected-row',
+        hoverTableRow: 'tbl-hover-row',
+        headerCell: 'tbl-header-cell',
+        tableCell: 'tbl-cell',
       },
-    }
+    };
 
     function drawCharts() {
       for (const chart of charts) {
         const queryString = encodeURIComponent('SELECT A, B');
-        const path = `https://docs.google.com/spreadsheets/d/1M0R3QqolAt1X73Y1gTraJ_AVQ2S4wDl43A3bfa7yE3w/gviz/tq?gid=${chart.sheetId}&headers=1&tq=${queryString}`
-        const query = new google.visualization.Query(path)
-        query.send(handleQueryResponse(chart))
+        const path = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?gid=${chart.sheetId}&headers=1&tq=${queryString}`;
+        const query = new google.visualization.Query(path);
+        query.send(handleQueryResponse(chart));
       }
     }
 
     function handleQueryResponse(chart) {
       return (response) => {
         if (response.isError()) {
-          alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage())
-          return null
+          console.error('Erro no Google Sheets:', response.getMessage(), response.getDetailedMessage());
+          renderError(chart);
+          return;
         }
 
-        drawLineChart(chart.chartId, response)
-        drawTableChart(chart.tableId, response)
+        const data = response.getDataTable();
+        updateStats(chart, data);
+        drawLineChart(chart.chartId, data);
+        drawTableChart(chart.tableId, data);
+      };
+    }
+
+    function drawLineChart(chartId, data) {
+      const container = document.getElementById(chartId);
+      const chart = new google.visualization.LineChart(container);
+      const options = Object.assign({}, lineChartOptions, {
+        width: container.clientWidth,
+        height: container.clientHeight,
+      });
+      chart.draw(data, options);
+    }
+
+    function drawTableChart(tableId, data) {
+      const table = new google.visualization.Table(document.getElementById(tableId));
+      table.draw(data, tableChartOptions);
+    }
+
+    function updateStats(chart, data) {
+      const root = chart.personEl();
+      if (!root || data.getNumberOfRows() === 0) return;
+
+      const rows = data.getNumberOfRows();
+      const firstWeight = Number(data.getValue(0, 1));
+      const lastWeight = Number(data.getValue(rows - 1, 1));
+      const lastDateRaw = data.getValue(rows - 1, 0);
+      const diff = lastWeight - firstWeight;
+
+      const currentEl = root.querySelector('[data-stat="current"]');
+      const variationEl = root.querySelector('[data-stat="variation"]');
+      const lastEl = root.querySelector('[data-stat="last"]');
+
+      currentEl.textContent = formatWeight(lastWeight);
+
+      const sign = diff > 0 ? '+' : '';
+      variationEl.textContent = `${sign}${formatWeight(diff)}`;
+      variationEl.classList.remove('is-positive', 'is-negative', 'is-neutral');
+      if (diff < 0) variationEl.classList.add('is-positive');
+      else if (diff > 0) variationEl.classList.add('is-negative');
+      else variationEl.classList.add('is-neutral');
+
+      lastEl.textContent = formatDate(lastDateRaw);
+    }
+
+    function formatWeight(n) {
+      if (!Number.isFinite(n)) return '—';
+      return n.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 2 });
+    }
+
+    function formatDate(value) {
+      if (!value) return '—';
+      if (value instanceof Date) {
+        return value.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' });
       }
+      return String(value);
     }
 
-    function drawLineChart(chartId, response) {
-      const data = response.getDataTable()
-      const chart = new google.visualization.LineChart(document.getElementById(chartId))
-      // const chart = new google.visualization.ColumnChart(document.getElementById(chartId))
-      chart.draw(data, lineChartOptions)
+    function renderError(chart) {
+      const root = chart.personEl();
+      if (!root) return;
+      root.querySelector('.chart-wrapper').innerHTML =
+        '<div class="chart-error"><i class="bi bi-exclamation-triangle"></i> Não foi possível carregar os dados.</div>';
     }
 
-    function drawTableChart(tableId, response) {
-      const data = response.getDataTable()
-      const table = new google.visualization.Table(document.getElementById(tableId))
-      table.draw(data, tableChartOptions)
-    }
-
+    window.addEventListener('resize', () => {
+      clearTimeout(window.__chartResize);
+      window.__chartResize = setTimeout(drawCharts, 150);
+    });
   </script>
 
 </body>
