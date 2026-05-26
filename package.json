@@ -5,7 +5,9 @@
   "description": "Site do curriculo pessoal do Leandro Macedo",
   "scripts": {
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.min.css --minify",
-    "watch:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.min.css --watch"
+    "watch:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.min.css --watch",
+    "build:inline": "node scripts/inline-css.js",
+    "build": "npm run build:css && npm run build:inline"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"

@@ -148,6 +148,17 @@ button:focus-visible {
   flex-shrink: 0;
 }
 
+picture {
+  display: block;
+  aspect-ratio: 1 / 1;
+}
+
+picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .theme-switch__icon--sun {
   display: none;
 }
