@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://leandromacedo.dev/</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://leandromacedo.dev/pt/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://leandromacedo.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leandromacedo.dev/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leandromacedo.dev/pt/"/>
+  </url>
+  <url>
+    <loc>https://leandromacedo.dev/en/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://leandromacedo.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leandromacedo.dev/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://leandromacedo.dev/pt/"/>
   </url>
 </urlset>

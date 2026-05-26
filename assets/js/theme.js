@@ -31,11 +31,16 @@
     var themeIcon = themeSwitch.querySelector('.fa');
     var isDark = theme === 'dark';
 
+    var labelLight = themeSwitch.getAttribute('data-label-light') || 'Tema claro';
+    var labelDark = themeSwitch.getAttribute('data-label-dark') || 'Tema escuro';
+    var ariaLight = themeSwitch.getAttribute('data-aria-light') || 'Alternar para tema claro';
+    var ariaDark = themeSwitch.getAttribute('data-aria-dark') || 'Alternar para tema escuro';
+
     themeSwitch.setAttribute('aria-pressed', String(isDark));
-    themeSwitch.setAttribute('aria-label', isDark ? 'Alternar para tema claro' : 'Alternar para tema escuro');
+    themeSwitch.setAttribute('aria-label', isDark ? ariaLight : ariaDark);
 
     if (themeLabel) {
-      themeLabel.textContent = isDark ? 'Tema claro' : 'Tema escuro';
+      themeLabel.textContent = isDark ? labelLight : labelDark;
     }
 
     if (themeIcon) {
