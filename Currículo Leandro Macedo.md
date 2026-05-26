@@ -14,7 +14,7 @@ Tech Lead com 12 anos de experiência liderando times de engenharia em produtos 
 
 **Experiência:** Liderança técnica de times de engenharia, desenvolvimento de sistemas web, APIs REST e soluções IA First para CRM e atendimento ao cliente.
 
-**Conhecimento:** Node.js, Ruby on Rails, PHP, JavaScript, TypeScript, React, Vue.js, HTML, CSS, MySQL, PostgreSQL, MongoDB, AWS, GCP, SCRUM, Claude, Codex, N8N, Power Automate e Typebot.
+**Conhecimento:** Node.js, Ruby on Rails, PHP, Laravel, JavaScript, TypeScript, React, Vue.js, HTML, CSS, MySQL, PostgreSQL, MongoDB, AWS, GCP, SCRUM, Claude, Codex, N8N, Power Automate e Typebot.
 
 ### **PROJETOS**
 
@@ -67,7 +67,7 @@ Cargo: Tech Lead | Desenvolvedor Full Stack
 \- Atuação como Tech Lead do time de Atendimento, conduzindo decisões técnicas, organização das entregas e direcionamento do desenvolvimento
 \- Criação do CRM principal para comunicação com clientes, apoiando a operação e o relacionamento da empresa com sua base
 \- Desenvolvimento do novo sistema de NPS da empresa, com solução construída 100% com IA, além da evolução de sistemas web, APIs REST e integrações internas
-\- Stack: PHP, Node.js, MySQL, Google Cloud Platform (GCP), Jenkins e Inteligência Artificial
+\- Stack: PHP, Laravel, Node.js, MySQL, Google Cloud Platform (GCP), Jenkins e Inteligência Artificial
 
 **Sodré Santoro Leiloeiro Oficial**
 **07/2012 \- 06/2018**
@@ -76,7 +76,7 @@ Cargo: Tech Lead | Desenvolvedor Full Stack Sênior
 \- Atuação como Tech Lead do time de desenvolvimento web, apoiando decisões técnicas, arquitetura das soluções e organização das entregas
 \- Desenvolvimento da estrutura do leilão online da empresa, ampliando o alcance do produto e contribuindo para o aumento das vendas
 \- Criação e evolução de sistemas web, APIs REST e soluções mobile, levando a experiência de leilão também para dispositivos móveis
-\- Stack: PHP, Node.js, React, Vue.js, Bootstrap, MySQL, SQL Server e PhoneGap/Cordova
+\- Stack: PHP, Laravel, Node.js, React, Vue.js, Bootstrap, MySQL, SQL Server e PhoneGap/Cordova
 
 **Blue Service**
 **11/2011 \- 07/2012**
