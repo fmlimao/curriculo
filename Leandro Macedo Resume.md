@@ -8,27 +8,31 @@ Email: fmlimao@gmail.com
 
 **Tech Lead | Specialist Software Engineer**
 
-Tech Lead with 12 years of experience leading engineering teams on CRM, customer service, and customer communication products. Over 25 years in IT, I have built a career developing web systems and APIs, combining technical leadership with hands-on coding. I currently work with Node.js, Ruby on Rails, and AWS, along with automations using N8N, Power Automate, and Typebot, under an AI First approach.
+Tech Lead with 12 years of experience leading engineering teams on CRM, customer service, and sales products. Today, at Escale, I lead the construction of a sales ecosystem with artificial intelligence at its core — around 20 systems built 100% with AI. Over 25 years in IT, I have built a career developing web systems and APIs, combining technical leadership with hands-on coding. I currently work with Node.js, Ruby on Rails, and AWS, along with automations using N8N, Power Automate, and Typebot, under an AI First approach.
 
 ### **PROFESSIONAL QUALIFICATIONS**
 
-**Experience:** Technical leadership of engineering teams, web systems development, REST APIs, and AI First solutions for CRM and customer service.
+**Experience:** Technical leadership of engineering teams, web systems development, REST APIs, and AI First solutions for CRM, customer service, and sales.
 
 **Knowledge:** Node.js, Ruby on Rails, PHP, Laravel, JavaScript, TypeScript, React, Vue.js, HTML, CSS, MySQL, PostgreSQL, MongoDB, AWS, GCP, SCRUM, Claude, Codex, N8N, Power Automate, and Typebot.
 
-### **PROJECTS**
+### **SUCCESS STORIES**
 
-**AI First CRM – Escale**
-Evolution of CRM tools with Artificial Intelligence at the core of the product, bringing technology, operations, and customer service closer together.
+**AI Sales Ecosystem – Escale** *(flagship project)*
+My largest project: an automated sales ecosystem built 100% with AI, with around 20 systems integrated end to end. It replaced an operation running on third-party systems and centralized all client onboarding into a single dashboard — the AI generates and tests the sales agents' prompts, suggests A/B tests, analyzes 100% of conversations (detecting purchase intent and the lead's mood), and organizes dashboards and the sales funnel.
+**Results:** new-client onboarding from ~60 days to at most 4 hours; new-client acquisition from 2–3 per year to 3 in a single month.
 
 **100% AI NPS – Movida**
-End-to-end NPS system built with AI, which collects, classifies, and turns customer feedback into fast business insights.
+Movida's first system built 100% with AI. It unified NPS surveys that were previously sent separately by each project, with guaranteed delivery and more responses.
+**Results:** survey delivery rate from 50% to 100%; response rate from 40% to 90%.
 
 **Customer Service CRM – Movida**
-Movida's main customer communication CRM, unifying service channels and centralizing the relationship with its customer base.
+Unified customer service channels that were previously separate and disorganized, organizing and routing requests across operations teams with end-to-end traceability.
+**Results:** requests handled and resolved from 50% to 100%.
 
 **Online Auction – Sodré Santoro**
-Online auction platform and mobile app that expanded the business reach beyond in-person events, opening a new sales channel.
+Latin America's first live online auction platform, fully web and mobile. It moved auctions away from a nearly all in-person model, cutting operational costs and expanding the business's reach and value.
+**Results:** bids placed online from 5% to over 80%.
 
 ### **EDUCATION**
 
@@ -46,8 +50,8 @@ Technical High School in Informatics and Mechatronics
 **05/2026 – Present**
 
 Role: Tech Lead | Specialist Software Engineer
-- Promoted to Specialist Software Engineer, taking on end-to-end technical leadership of projects — from architecture design and technical decisions to delivering solutions alongside the team
-- Responsible for the continuous evolution of CRM tools under an AI First approach, expanding the reach of artificial intelligence across customer service, operations, and customer communication products
+- Promoted to Specialist Software Engineer, taking on end-to-end technical leadership — from architecture to delivering solutions alongside the team
+- Led the construction of an AI First sales ecosystem with around 20 systems built 100% with AI, cutting new-client onboarding from ~60 days to a few hours
 - Acting as Tech Lead by organizing the development pipeline, team workflow, and quality practices, combined with technical direction, code review, and active hands-on coding
 - Stack: Node.js, TypeScript, Ruby on Rails, AWS, N8N, Jira, Claude, and Codex
 
@@ -56,8 +60,8 @@ Role: Tech Lead | Specialist Software Engineer
 
 Role: Tech Lead | Senior Software Engineer
 - Acted as Tech Lead, organizing the development pipeline, team workflow, and practices to ensure higher delivery quality
-- Led the evolution of CRM tools with a focus on an AI First approach, connecting technology, operations, and efficiency in customer service
-- Responsible for code review, technical direction, and end-to-end work on customer communication across service channels
+- Led the evolution of sales tools with an AI First focus — the foundation that gave rise to the ecosystem built 100% with AI
+- Code review, technical direction, and end-to-end hands-on work, close to the team and the product
 - Stack: Node.js, TypeScript, Ruby on Rails, AWS, N8N, Jira, Claude, and Codex
 
 **Movida Aluguel de Carros**

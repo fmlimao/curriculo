@@ -8,27 +8,31 @@ Email: fmlimao@gmail.com
 
 **Tech Lead | Specialist Software Engineer**
 
-Tech Lead com 12 anos de experiência liderando times de engenharia em produtos de CRM, atendimento e comunicação com clientes. Ao longo de 25 anos em TI, construí uma trajetória no desenvolvimento de sistemas web e APIs, combinando liderança técnica com atuação próxima do código. Atualmente trabalho com Node.js, Ruby on Rails e AWS, além de automações com N8N, Power Automate e Typebot, sob uma abordagem IA First.
+Tech Lead com 12 anos de experiência liderando times de engenharia em produtos de CRM, atendimento e vendas. Hoje, na Escale, lidero a construção de um ecossistema de vendas com a inteligência artificial no centro — cerca de 20 sistemas criados 100% com IA. Ao longo de 25 anos em TI, construí uma trajetória no desenvolvimento de sistemas web e APIs, combinando liderança técnica com atuação próxima do código. Atualmente trabalho com Node.js, Ruby on Rails e AWS, além de automações com N8N, Power Automate e Typebot, sob uma abordagem IA First.
 
 ### **QUALIFICAÇÃO PROFISSIONAL**
 
-**Experiência:** Liderança técnica de times de engenharia, desenvolvimento de sistemas web, APIs REST e soluções IA First para CRM e atendimento ao cliente.
+**Experiência:** Liderança técnica de times de engenharia, desenvolvimento de sistemas web, APIs REST e soluções IA First para CRM, atendimento e vendas.
 
 **Conhecimento:** Node.js, Ruby on Rails, PHP, Laravel, JavaScript, TypeScript, React, Vue.js, HTML, CSS, MySQL, PostgreSQL, MongoDB, AWS, GCP, SCRUM, Claude, Codex, N8N, Power Automate e Typebot.
 
-### **PROJETOS**
+### **CASES DE SUCESSO**
 
-**CRM IA First \- Escale**
-Evolução das ferramentas de CRM com a Inteligência Artificial no centro do produto, aproximando tecnologia, operação e atendimento ao cliente.
+**Ecossistema de Vendas com IA \- Escale** *(principal projeto)*
+Meu maior projeto: um ecossistema de vendas automatizadas construído 100% com IA, com cerca de 20 sistemas integrados ponta a ponta. Substituiu uma operação montada sobre sistemas de terceiros e centralizou todo o onboarding de clientes em um único painel — a IA gera e testa os prompts dos agentes de vendas, sugere testes A/B, analisa 100% das conversas (identificando a intenção de compra e o humor do lead) e organiza dashboards e funil de vendas.
+**Resultados:** onboarding de um novo cliente de ~60 dias para no máximo 4 horas; aquisição de novos clientes de 2–3 por ano para 3 em um único mês.
 
 **NPS 100% com IA \- Movida**
-Sistema de NPS construído de ponta a ponta com IA, que coleta, classifica e transforma o feedback dos clientes em insights rápidos para o negócio.
+Primeiro sistema da Movida construído 100% com IA. Unificou as pesquisas de NPS, antes disparadas de forma separada por cada projeto, com envio garantido e mais respostas.
+**Resultados:** taxa de entrega das pesquisas de 50% para 100%; taxa de resposta de 40% para 90%.
 
 **CRM de Atendimento \- Movida**
-CRM principal de comunicação com clientes da Movida, unificando canais de atendimento e centralizando o relacionamento com a base.
+Unificou canais de atendimento antes separados e desorganizados, organizando e distribuindo as solicitações entre os times de operação, com rastreabilidade ponta a ponta.
+**Resultados:** solicitações tratadas e resolvidas de 50% para 100%.
 
 **Leilão Online \- Sodré Santoro**
-Plataforma de leilão online e aplicativo mobile que ampliaram o alcance do negócio para além do presencial, abrindo um novo canal de vendas.
+Primeira plataforma de leilão online ao vivo da América Latina, totalmente web e mobile. Tirou o leilão do modelo quase 100% presencial, reduzindo custos operacionais e ampliando o alcance e o valor do negócio.
+**Resultados:** lances feitos online de 5% para mais de 80%.
 
 ### **FORMAÇÃO**
 
@@ -46,8 +50,8 @@ Ciências da Computação \- Finalizado
 **05/2026 \- Atual**
 
 Cargo: Tech Lead | Specialist Software Engineer
-\- Promoção a Specialist Software Engineer, assumindo a liderança técnica de projetos de ponta a ponta — do desenho da arquitetura e das decisões técnicas à construção e à entrega das soluções junto ao time
-\- Responsável pela evolução contínua das ferramentas de CRM em uma abordagem IA First, ampliando o alcance da inteligência artificial em produtos de atendimento, operação e comunicação com clientes
+\- Promoção a Specialist Software Engineer, assumindo a liderança técnica de ponta a ponta — da arquitetura à entrega das soluções junto ao time
+\- Liderança da construção de um ecossistema de vendas IA First com cerca de 20 sistemas criados 100% com IA, que reduziu o onboarding de novos clientes de ~60 dias para poucas horas
 \- Atuação como Tech Lead na organização da pipeline de desenvolvimento, do fluxo de trabalho do time e das práticas de qualidade, somada ao direcionamento técnico, code review e atuação ativa no código
 \- Stack: Node.js, TypeScript, Ruby on Rails, AWS, N8N, Jira, Claude e Codex
 
@@ -56,8 +60,8 @@ Cargo: Tech Lead | Specialist Software Engineer
 
 Cargo: Tech Lead | Senior Software Engineer
 \- Atuação como Tech Lead, organizando a pipeline de desenvolvimento, o fluxo de trabalho do time e as práticas para garantir mais qualidade nas entregas
-\- Liderança da evolução das ferramentas de CRM com foco em uma abordagem IA First, conectando tecnologia, operação e eficiência no atendimento
-\- Responsável por code review, direcionamento técnico e atuação de ponta a ponta na comunicação dos clientes com os canais de atendimento
+\- Liderança da evolução das ferramentas de vendas com foco em IA First — base que deu origem ao ecossistema construído 100% com IA
+\- Code review, direcionamento técnico e atuação de ponta a ponta no código, próximo do time e do produto
 \- Stack: Node.js, TypeScript, Ruby on Rails, AWS, N8N, Jira, Claude e Codex
 
 **Movida Aluguel de Carros**

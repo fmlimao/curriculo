@@ -75,11 +75,27 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Leandro Macedo",
+      "alternateName": "Leandro Fernandes de Macedo",
       "jobTitle": "Tech Lead | Specialist Software Engineer",
       "url": "https://leandromacedo.dev/en/",
       "image": "https://leandromacedo.dev/assets/img/leandro-macedo.jpeg",
       "email": "fmlimao@gmail.com",
-      "description": "Leandro Macedo is a Tech Lead with 12 years leading engineering teams on CRM, customer service, and customer communication products. Works with AI First, automations, and N8N, combining technical leadership with hands-on coding.",
+      "telephone": "+5511987391075",
+      "description": "Tech Lead with 12 years leading engineering teams on CRM, customer service, and sales products. At Escale, leads the construction of a sales ecosystem with artificial intelligence at its core, with around 20 systems built 100% with AI. Over 25 years in IT, combining technical leadership with hands-on coding.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Guarulhos",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Escale Tecnologia e Marketing"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Centro Universitário Nove de Julho"
+      },
       "sameAs": [
         "https://github.com/fmlimao",
         "https://www.linkedin.com/in/leandro-macedo-51312265/"
@@ -87,11 +103,13 @@
       "knowsAbout": [
         "Node.js",
         "Ruby on Rails",
+        "PHP",
         "AWS",
+        "Artificial Intelligence",
+        "AI First",
         "N8N",
         "Automations",
-        "AI First",
-        "Jira",
+        "CRM",
         "Claude",
         "Codex"
       ]
@@ -329,9 +347,11 @@ summary:focus-visible {
 [data-theme="dark"] .theme-switch__track { background-color: var(--accent); }
 [data-theme="dark"] .theme-switch__thumb { transform: translateX(1rem); }
 
-.theme-switch__icon--sun { display: none; }
-[data-theme="dark"] .theme-switch__icon--moon { display: none; }
-[data-theme="dark"] .theme-switch__icon--sun { display: inline-block; }
+/* claro: mostra a lua; escuro: mostra o sol (especificidade > .icon) */
+.theme-switch .theme-switch__icon--moon { display: inline-block; }
+.theme-switch .theme-switch__icon--sun { display: none; }
+[data-theme="dark"] .theme-switch .theme-switch__icon--moon { display: none; }
+[data-theme="dark"] .theme-switch .theme-switch__icon--sun { display: inline-block; }
 
 .icon {
   display: inline-block;
@@ -1024,7 +1044,7 @@ summary:focus-visible {
     <section class="section" id="projects">
       <div class="section__head">
         <span class="section__num serif">02</span>
-        <h2 class="section__title">Projects</h2>
+        <h2 class="section__title">Success Stories</h2>
       </div>
       <div class="projects">
         <article class="project">
