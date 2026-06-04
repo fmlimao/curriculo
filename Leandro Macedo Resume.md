@@ -34,6 +34,8 @@ Unified customer service channels that were previously separate and disorganized
 Latin America's first live online auction platform, fully web and mobile. It moved auctions away from a nearly all in-person model, cutting operational costs and expanding the business's reach and value.
 **Results:** bids placed online from 5% to over 80%.
 
+<div class="page-break"></div>
+
 ### **EDUCATION**
 
 **Centro Universitário Nove de Julho – Vila Maria – São Paulo**
@@ -126,6 +128,8 @@ Role: PHP Developer
 - Supported network infrastructure and the environments required for operations
 - Worked on technical support and maintenance of the technology resources used daily
 - Stack: PHP, jQuery, and MySQL
+
+<div class="page-break"></div>
 
 **Colégio Serrano Guardia**
 **08/2005 – 09/2007**

@@ -34,6 +34,8 @@ Unificou canais de atendimento antes separados e desorganizados, organizando e d
 Primeira plataforma de leilão online ao vivo da América Latina, totalmente web e mobile. Tirou o leilão do modelo quase 100% presencial, reduzindo custos operacionais e ampliando o alcance e o valor do negócio.
 **Resultados:** lances feitos online de 5% para mais de 80%.
 
+<div class="page-break"></div>
+
 ### **FORMAÇÃO**
 
 **Centro Universitário Nove de Julho \- Vila Maria \- São Paulo**
@@ -117,6 +119,8 @@ Cargo: Desenvolvedor PHP
 \- Implementação de funcionalidades, correções e melhorias evolutivas nos sistemas desenvolvidos
 \- Atuação na sustentação técnica das aplicações e no suporte às entregas do time
 \- Stack: PHP, jQuery e MySQL
+
+<div class="page-break"></div>
 
 **DIGIPIX Soluções em Fotografia Digital**
 **09/2007 \- 04/2008**
