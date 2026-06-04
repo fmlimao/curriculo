@@ -6,8 +6,8 @@
   "scripts": {
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.min.css --minify",
     "watch:css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.min.css --watch",
-    "build:inline": "node scripts/inline-css.js",
-    "build": "npm run build:css && npm run build:inline"
+    "build:bundle": "node scripts/bundle-css.js",
+    "build": "npm run build:css && npm run build:bundle"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
