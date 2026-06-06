@@ -67,6 +67,12 @@ location = /404.html {
     internal;   # so e servida em erros reais; remova esta linha p/ testar via /404.html
 }
 
+# --- Redirects de URLs antigas (sub-projetos movidos para /labs) ----------
+# $request_uri preserva o subpath, ex.: /propostas/abc/ -> /labs/propostas/abc/
+location /minesweeper/   { return 301 /labs$request_uri; }
+location /casal-maromba/ { return 301 /labs$request_uri; }
+location /propostas/     { return 301 /labs$request_uri; }
+
 # --- Seguranca basica ----------------------------------------------------
 add_header X-Content-Type-Options "nosniff" always;
 add_header Referrer-Policy "strict-origin-when-cross-origin" always;
