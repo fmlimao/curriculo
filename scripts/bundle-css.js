@@ -7,7 +7,7 @@ const path = require('path');
 
 const root = path.resolve(__dirname, '..');
 const cssFiles = [
-  'assets/css/style2.min.css',
+  'assets/css/fonts.css',
   'assets/css/tailwind.min.css',
   'assets/css/theme.css',
 ];
